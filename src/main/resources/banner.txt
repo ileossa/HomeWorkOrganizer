@@ -1,0 +1,8 @@
+${AnsiColor.BLUE}  _   _                       ${AnsiColor.RED}__        __         _     ${AnsiColor.GREEN}  ___                        _
+${AnsiColor.BLUE} | | | | ___  _ __ ___   ___  ${AnsiColor.RED}\ \      / /__  _ __| | __ ${AnsiColor.GREEN} / _ \ _ __ __ _  __ _ _ __ (_)_______ _ __
+${AnsiColor.BLUE} | |_| |/ _ \| '_ ` _ \ / _ \ ${AnsiColor.RED} \ \ /\ / / _ \| '__| |/ / ${AnsiColor.GREEN}| | | | '__/ _` |/ _` | '_ \| |_  / _ \ '__|
+${AnsiColor.BLUE} |  _  | (_) | | | | | |  __/ ${AnsiColor.RED}  \ V  V / (_) | |  |   <  ${AnsiColor.GREEN}| |_| | | | (_| | (_| | | | | |/ /  __/ |
+${AnsiColor.BLUE} |_| |_|\___/|_| |_| |_|\___| ${AnsiColor.RED}   \_/\_/ \___/|_|  |_|\_\ ${AnsiColor.GREEN} \___/|_|  \__, |\__,_|_| |_|_/___\___|_|
+${AnsiColor.BLUE}                              ${AnsiColor.RED}                           ${AnsiColor.GREEN}           |___/
+
+${info.name} ::: ${application.version} ::: mode[${spring.profiles.active}]
