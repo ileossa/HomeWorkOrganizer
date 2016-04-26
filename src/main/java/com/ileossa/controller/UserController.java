@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-import static org.springframework.web.bind.annotation.RequestMethod.PUT;
+import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 /**
  * Created by swip on 25/04/2016.
@@ -24,6 +25,57 @@ public class UserController {
 
     @Autowired
     private UserRepository userRepository;
+
+    @RequestMapping(method = POST)
+    public void createUser(@RequestParam(value = "pseudo") String pseudo,
+                           @RequestParam(value = "email") String email){
+        LOG.debug("Create new user[ pseudo: " + pseudo + " , email: " + email );
+    }
+
+
+    @RequestMapping(method = DELETE, value = "{id}")
+    public void deleteUser(@PathVariable Long id){
+        LOG.debug("Delete user id: " + id  );
+        userRepository.delete(id);
+    }
+
+    @RequestMapping(method = GET, value = "{id}")
+    public User findUserById(@PathVariable Long id){
+        LOG.debug("find user by user id: " + id  );
+        return userRepository.findOne(id);
+    }
+
+    @RequestMapping(method = GET, value = "{pseudo}")
+    public User findUserById(@PathVariable String pseudo){
+        LOG.debug("find user by user pseudo: " + pseudo  );
+        return userRepository.findOneByPseudo(pseudo);
+    }
+
+    @RequestMapping(method = GET, value = "{email}")
+    public User findUserByEmail(@PathVariable String email){
+        LOG.debug("find user by user emai: " + email  );
+        return userRepository.findOneByEmail(email);
+    }
+
+    @RequestMapping(method = GET, value = "{idRole}")
+    public List<User> findListUserByIdRole(@PathVariable Long idRole){
+        LOG.debug("find user by user idRole: " + idRole  );
+        return userRepository.findUserList(idRole);
+    }
+
+    @RequestMapping(method = PATCH, value = "{id}")
+    public User createUser(@PathVariable Long id,
+                           @RequestParam(value = "pseudo") String pseudo,
+                           @RequestParam(value = "email") String email,
+                           @RequestParam(value = "idRole") Long idRole){
+        LOG.debug("Update new user[ pseudo: " + pseudo + " , email: " + email +", idRole: " + idRole);
+        User user = userRepository.findOne(id);
+        //todo faire les tests pour savoir si on doit modifier la valeur ou pas.
+        return userRepository.save(user);
+    }
+
+
+
 
     @RequestMapping(method = GET)
     public String helloWorld(){
