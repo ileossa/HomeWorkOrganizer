@@ -37,6 +37,7 @@ public class UserController {
     public void deleteUser(@PathVariable Long id){
         LOG.debug("Delete user id: " + id  );
         userRepository.delete(id);
+
     }
 
     @RequestMapping(method = GET, value = "{id}")
