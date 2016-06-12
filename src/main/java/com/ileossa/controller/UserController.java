@@ -1,5 +1,6 @@
 package com.ileossa.controller;
 
+import com.ileossa.exception.UserExistException;
 import com.ileossa.model.User;
 import com.ileossa.repository.UserRepository;
 import org.slf4j.Logger;
@@ -29,7 +30,17 @@ public class UserController {
     @RequestMapping(method = POST)
     public void createUser(@RequestParam(value = "pseudo") String pseudo,
                            @RequestParam(value = "email") String email){
+        //create user mais il y a pas de password ????
         LOG.debug("Create new user[ pseudo: " + pseudo + " , email: " + email );
+        if(userRepository.findOneByEmail(email)!=null || userRepository.findOneByPseudo(pseudo)!=null){
+            throw  new UserExistException();
+        }else{
+            //constructeur par défault pour utilisateur sans role?
+            User user = new User(pseudo,email,0);
+            userRepository.save(user);
+            //méthode void? pas de renvoi de true ou false ?
+        }
+
     }
 
 
@@ -69,6 +80,8 @@ public class UserController {
                            @RequestParam(value = "pseudo") String pseudo,
                            @RequestParam(value = "email") String email,
                            @RequestParam(value = "idRole") Long idRole){
+        //pareil pas de mdp?
+        //create user qui fait un patch et qui save un user avec un id ???? WHAT?
         LOG.debug("Update new user[ pseudo: " + pseudo + " , email: " + email +", idRole: " + idRole);
         User user = userRepository.findOne(id);
         //todo faire les tests pour savoir si on doit modifier la valeur ou pas.
