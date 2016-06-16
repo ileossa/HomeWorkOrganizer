@@ -77,7 +77,7 @@ public class UserController {
     }
 
     @RequestMapping(method = PATCH, value = "{id}")
-    public User createUser(@PathVariable Long id,
+    public User updateUser(@PathVariable Long id,
                            @RequestParam(value = "pseudo") String pseudo,
                            @RequestParam(value = "password") String password,
                            @RequestParam(value = "email") String email,
