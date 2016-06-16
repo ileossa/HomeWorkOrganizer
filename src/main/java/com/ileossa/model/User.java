@@ -13,15 +13,17 @@ public class User {
     private long id;
     private String pseudo;
     private String email;
+    private String password;
     @ManyToOne(fetch = FetchType.EAGER)
     private long idRole;
 
     public User() {}
 
-    public User(String pseudo, String email, long idRole) {
+    public User(String pseudo, String email,String password, long idRole) {
         this.pseudo = pseudo;
         this.email = email;
         this.idRole = idRole;
+        this.password = password;
     }
 
 
@@ -57,6 +59,13 @@ public class User {
         this.idRole = idRole;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     @Override
     public String toString() {
@@ -64,7 +73,8 @@ public class User {
                 "id=" + id +
                 ", pseudo='" + pseudo + '\'' +
                 ", email='" + email + '\'' +
-                ", id=" + idRole +
+                ", password='" + password + '\'' +
+                ", idRole=" + idRole +
                 '}';
     }
 }

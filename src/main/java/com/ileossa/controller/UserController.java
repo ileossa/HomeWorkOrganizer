@@ -29,6 +29,7 @@ public class UserController {
 
     @RequestMapping(method = POST)
     public void createUser(@RequestParam(value = "pseudo") String pseudo,
+                           @RequestParam(value = "password") String password,
                            @RequestParam(value = "email") String email){
         //create user mais il y a pas de password ????
         LOG.debug("Create new user[ pseudo: " + pseudo + " , email: " + email );
@@ -36,7 +37,7 @@ public class UserController {
             throw  new UserExistException();
         }else{
             //constructeur par défault pour utilisateur sans role?
-            User user = new User(pseudo,email,0);
+            User user = new User(pseudo,email,password,0);
             userRepository.save(user);
             //méthode void? pas de renvoi de true ou false ?
         }
@@ -78,13 +79,20 @@ public class UserController {
     @RequestMapping(method = PATCH, value = "{id}")
     public User createUser(@PathVariable Long id,
                            @RequestParam(value = "pseudo") String pseudo,
+                           @RequestParam(value = "password") String password,
                            @RequestParam(value = "email") String email,
                            @RequestParam(value = "idRole") Long idRole){
         //pareil pas de mdp?
         //create user qui fait un patch et qui save un user avec un id ???? WHAT?
         LOG.debug("Update new user[ pseudo: " + pseudo + " , email: " + email +", idRole: " + idRole);
         User user = userRepository.findOne(id);
-        //todo faire les tests pour savoir si on doit modifier la valeur ou pas.
+        if (userRepository.findOneByPseudo(pseudo)!=null){
+            throw new UserExistException();
+        }else{
+            user.setPseudo(pseudo);
+        }
+        user.setPassword(password);
+        user.setIdRole(idRole);
         return userRepository.save(user);
     }
 
