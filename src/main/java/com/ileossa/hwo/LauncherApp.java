@@ -1,5 +1,14 @@
 package com.ileossa.hwo;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+/**
+ * @author ileossa
+ *
+ */
+@SpringBootApplication
 public class LauncherApp {
 
 	public LauncherApp() {
@@ -7,8 +16,7 @@ public class LauncherApp {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("hello");
+		SpringApplication.run(LauncherApp.class, args);
 	}
 
 }
