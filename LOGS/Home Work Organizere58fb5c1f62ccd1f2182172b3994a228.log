@@ -420,3 +420,6 @@ Resolved arguments:
 , path=/user/authenticate}] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@556b5352]
 2016-07-12 15:44:46.060 DEBUG 8555 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
 2016-07-12 15:44:46.060 DEBUG 8555 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 16:09:14.516  INFO 8555 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@351d00c0: startup date [Tue Jul 12 15:43:02 CEST 2016]; root of context hierarchy
+2016-07-12 16:09:14.524  INFO 8555 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-12 16:09:14.531  INFO 8555 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
