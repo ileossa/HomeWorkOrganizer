@@ -254,3 +254,40 @@
 2016-07-12 12:58:06.160 DEBUG 4896 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [Welcom API Home Work Organizer] as "text/plain;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@72708be8]
 2016-07-12 12:58:06.162 DEBUG 4896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
 2016-07-12 12:58:06.164 DEBUG 4896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 14:47:22.143 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/number]
+2016-07-12 14:47:22.150 DEBUG 4896 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /number
+2016-07-12 14:47:22.154 DEBUG 4896 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Did not find handler method for [/number]
+2016-07-12 14:47:22.155 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/number] are [/**]
+2016-07-12 14:47:22.156 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/number] are {}
+2016-07-12 14:47:22.157 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/number] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@35f7969d]]] and 1 interceptor
+2016-07-12 14:47:22.158 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/number] is: -1
+2016-07-12 14:47:22.161 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-07-12 14:47:22.161 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 14:47:22.167 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2016-07-12 14:47:22.168 DEBUG 4896 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /error
+2016-07-12 14:47:22.171 DEBUG 4896 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2016-07-12 14:47:22.171 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/error] is: -1
+2016-07-12 14:47:22.180 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2016-07-12 14:47:22.186 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@75f6d661] based on requested media type 'text/html'
+2016-07-12 14:47:22.198 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@75f6d661] in DispatcherServlet with name 'dispatcherServlet'
+2016-07-12 14:47:22.228 DEBUG 4896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 14:47:25.451 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/toto]
+2016-07-12 14:47:25.452 DEBUG 4896 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /toto
+2016-07-12 14:47:25.454 DEBUG 4896 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Did not find handler method for [/toto]
+2016-07-12 14:47:25.454 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/toto] are [/**]
+2016-07-12 14:47:25.454 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/toto] are {}
+2016-07-12 14:47:25.454 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/toto] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@35f7969d]]] and 1 interceptor
+2016-07-12 14:47:25.454 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/toto] is: -1
+2016-07-12 14:47:25.455 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-07-12 14:47:25.456 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 14:47:25.457 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+2016-07-12 14:47:25.457 DEBUG 4896 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /error
+2016-07-12 14:47:25.460 DEBUG 4896 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+2016-07-12 14:47:25.460 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/error] is: -1
+2016-07-12 14:47:25.462 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+2016-07-12 14:47:25.462 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@75f6d661] based on requested media type 'text/html'
+2016-07-12 14:47:25.462 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@75f6d661] in DispatcherServlet with name 'dispatcherServlet'
+2016-07-12 14:47:25.463 DEBUG 4896 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-07-12 15:42:57.021  INFO 4896 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@351d00c0: startup date [Tue Jul 12 12:57:33 CEST 2016]; root of context hierarchy
+2016-07-12 15:42:57.027  INFO 4896 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-12 15:42:57.032  INFO 4896 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

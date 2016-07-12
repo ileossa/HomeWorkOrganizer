@@ -34,7 +34,7 @@ public class UserController {
 
 
     @RequestMapping(method = GET)
-    public List<UserModel> listMemberGroup(@RequestParam(value = "classe") String classe){
+    public List<UserModel> listMemberGroup(@RequestParam(value = "group") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
         memberGroup = userRepository.findByClasse(classe);
         return memberGroup;
@@ -98,7 +98,7 @@ public class UserController {
 
         if(userRepository.findOne(idUser) != null){
             UserModel userModel = userRepository.findOne(idUser);
-            userModel.setClasse(newRole);
+            userModel.setRole(newRole);
             userRepository.save(userModel);
             return userModel;
         }
@@ -123,14 +123,48 @@ public class UserController {
 
     @RequestMapping(method = PUT )
     public UserModel userChangePassword(@RequestParam(value = "id") long idUser,
-                                        @RequestParam(value = "password") String password) throws UserNotFoundException {
+                                        @RequestParam(value = "current_password") String password,
+                                        @RequestParam(value = "new_password")String newPassword) throws UserNotFoundException, UserErrorPatch {
         if(userRepository.findOne(idUser)!=null){
             UserModel userModel = userRepository.findOne(idUser);
-            userModel.setPassword(password);
-            userRepository.save(userModel);
-            return userModel;
+            if(userModel.getPassword().equals(newPassword)) {
+                userModel.setPassword(password);
+                userRepository.save(userModel);
+                return userModel;
+            }else{
+                throw new UserErrorPatch();
+            }
         }else {
             throw new UserNotFoundException();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
