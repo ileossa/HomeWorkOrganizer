@@ -1,0 +1,1128 @@
+2016-07-12 02:24:46.645 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:46.661 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:46.668 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-12 02:24:46.668 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-12 02:24:46.669 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-12 02:24:46.804  INFO 29487 --- [main] com.ileossa.hwo.LauncherApp              : Starting LauncherApp on ileossa-laptop14 with PID 29487 (/home/ileossa/workspace/HomeWorkOrganizer/target/classes started by ileossa in /home/ileossa/workspace/HomeWorkOrganizer)
+2016-07-12 02:24:46.804  INFO 29487 --- [main] com.ileossa.hwo.LauncherApp              : The following profiles are active: dev
+2016-07-12 02:24:46.994  INFO 29487 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:24:48.141 DEBUG 29487 --- [background-preinit] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2016-07-12 02:24:48.155 DEBUG 29487 --- [background-preinit] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2016-07-12 02:24:49.891 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [classpath:/application.yml]#dev] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2016-07-12 02:24:49.891 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [classpath:/application.yml]] PropertySource with search precedence immediately lower than [applicationConfig: [classpath:/application.yml]#dev]
+2016-07-12 02:24:49.892 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [applicationConfigurationProperties] PropertySource
+2016-07-12 02:24:49.892 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2016-07-12 02:24:49.999  INFO 29487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bce7d26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-12 02:24:50.135 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2016-07-12 02:24:50.136 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2016-07-12 02:24:50.138 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2016-07-12 02:24:50.139 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2016-07-12 02:24:50.142 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy58
+2016-07-12 02:24:50.144 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2016-07-12 02:24:50.150 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2016-07-12 02:24:50.151 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2016-07-12 02:24:50.152 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2016-07-12 02:24:50.155 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2016-07-12 02:24:50.566  INFO 29487 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-12 02:24:50.616  INFO 29487 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-12 02:24:50.623  INFO 29487 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-07-12 02:24:50.897  INFO 29487 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-12 02:24:50.898 DEBUG 29487 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2016-07-12 02:24:50.898  INFO 29487 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3907 ms
+2016-07-12 02:24:51.530 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.531 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.532 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-12 02:24:51.532 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-12 02:24:51.532 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-12 02:24:51.543 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.544 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.544 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-12 02:24:51.544 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-12 02:24:51.544 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-12 02:24:51.548 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.549 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.549 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-12 02:24:51.549 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-12 02:24:51.549 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-12 02:24:51.572 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.573 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-12 02:24:51.574 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-12 02:24:51.574 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-12 02:24:51.574 DEBUG 29487 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-12 02:24:51.587  INFO 29487 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-12 02:24:51.588  INFO 29487 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'webServlet' to [/h2-console/*]
+2016-07-12 02:24:51.592  INFO 29487 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-12 02:24:51.592  INFO 29487 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-12 02:24:51.592  INFO 29487 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-12 02:24:51.592  INFO 29487 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-12 02:24:51.630 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2016-07-12 02:24:51.841  INFO 29487 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-12 02:24:51.864 DEBUG 29487 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@4fca772d
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: org.apache.tomcat.jdbc.pool.DataSource@244418a{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.h2.Driver; maxActive=100; maxIdle=100; minIdle=10; initialSize=10; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE; username=sa; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=30000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/home/ileossa/workspace/HomeWorkOrganizer/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.ileossa.hwo.model.Caca
+		com.ileossa.hwo.Customers]
+	Mapping files names []
+	Properties []
+2016-07-12 02:24:51.886 DEBUG 29487 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2016-07-12 02:24:51.888 DEBUG 29487 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2016-07-12 02:24:51.890 DEBUG 29487 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2016-07-12 02:24:51.890 DEBUG 29487 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2016-07-12 02:24:51.905 DEBUG 29487 --- [main] o.h.b.r.s.internal.StrategySelectorImpl  : Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+2016-07-12 02:24:51.906 DEBUG 29487 --- [main] o.h.b.r.s.internal.StrategySelectorImpl  : Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+2016-07-12 02:24:51.958  INFO 29487 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-12 02:24:51.960  INFO 29487 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-12 02:24:51.962  INFO 29487 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-12 02:24:52.118 DEBUG 29487 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2016-07-12 02:24:52.145 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@1a256d80
+2016-07-12 02:24:52.145 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@1a256d80
+2016-07-12 02:24:52.145 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1a256d80
+2016-07-12 02:24:52.146 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3472947a
+2016-07-12 02:24:52.147 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@3af58f76
+2016-07-12 02:24:52.147 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@31b82e0f
+2016-07-12 02:24:52.148 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7dcb42a9
+2016-07-12 02:24:52.148 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7dcb42a9
+2016-07-12 02:24:52.148 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7dcb42a9
+2016-07-12 02:24:52.149 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@4a44cfc0
+2016-07-12 02:24:52.150 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@4a44cfc0
+2016-07-12 02:24:52.150 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4a44cfc0
+2016-07-12 02:24:52.151 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@f9cab00
+2016-07-12 02:24:52.154 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@f9cab00
+2016-07-12 02:24:52.158 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@f9cab00
+2016-07-12 02:24:52.162 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@550e9be6
+2016-07-12 02:24:52.163 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@550e9be6
+2016-07-12 02:24:52.163 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@550e9be6
+2016-07-12 02:24:52.164 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@1f2f0109
+2016-07-12 02:24:52.164 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@1f2f0109
+2016-07-12 02:24:52.165 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@1f2f0109
+2016-07-12 02:24:52.166 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@66a5755
+2016-07-12 02:24:52.167 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@66a5755
+2016-07-12 02:24:52.167 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@66a5755
+2016-07-12 02:24:52.169 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5d94a2dc
+2016-07-12 02:24:52.171 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5d94a2dc
+2016-07-12 02:24:52.171 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5d94a2dc
+2016-07-12 02:24:52.175 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@787508ca
+2016-07-12 02:24:52.175 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@787508ca
+2016-07-12 02:24:52.178 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1c067c0d
+2016-07-12 02:24:52.178 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1c067c0d
+2016-07-12 02:24:52.179 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@3c0e00a8
+2016-07-12 02:24:52.179 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@3c0e00a8
+2016-07-12 02:24:52.180 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2b6a0ea9
+2016-07-12 02:24:52.181 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7980cf2c
+2016-07-12 02:24:52.181 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@27443560
+2016-07-12 02:24:52.181 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@27443560
+2016-07-12 02:24:52.182 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1d858300
+2016-07-12 02:24:52.183 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1d858300
+2016-07-12 02:24:52.184 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@7c20cdd0
+2016-07-12 02:24:52.184 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7c20cdd0
+2016-07-12 02:24:52.190 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@35ef439e
+2016-07-12 02:24:52.191 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@35ef439e
+2016-07-12 02:24:52.195 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@35ef439e
+2016-07-12 02:24:52.198 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@46046c06
+2016-07-12 02:24:52.199 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@5a97b17c
+2016-07-12 02:24:52.199 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5a97b17c
+2016-07-12 02:24:52.199 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5a97b17c
+2016-07-12 02:24:52.199 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@659f226a
+2016-07-12 02:24:52.200 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@b61edb9
+2016-07-12 02:24:52.200 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@b61edb9
+2016-07-12 02:24:52.201 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@6025d790
+2016-07-12 02:24:52.201 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6025d790
+2016-07-12 02:24:52.204 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@343e225a
+2016-07-12 02:24:52.205 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@343e225a
+2016-07-12 02:24:52.207 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@36aab105
+2016-07-12 02:24:52.208 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@36aab105
+2016-07-12 02:24:52.209 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@17dad32f
+2016-07-12 02:24:52.210 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@17dad32f
+2016-07-12 02:24:52.211 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@fe87ddd
+2016-07-12 02:24:52.212 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@33eb6758
+2016-07-12 02:24:52.213 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@23da79eb
+2016-07-12 02:24:52.213 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@23da79eb
+2016-07-12 02:24:52.214 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@23da79eb
+2016-07-12 02:24:52.215 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1da4b3f9
+2016-07-12 02:24:52.215 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1da4b3f9
+2016-07-12 02:24:52.215 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1da4b3f9
+2016-07-12 02:24:52.215 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@383c3eb3
+2016-07-12 02:24:52.216 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@2007435e
+2016-07-12 02:24:52.216 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@2007435e
+2016-07-12 02:24:52.216 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@2007435e
+2016-07-12 02:24:52.217 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@37348491
+2016-07-12 02:24:52.217 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@37348491
+2016-07-12 02:24:52.217 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@37348491
+2016-07-12 02:24:52.218 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@dab1f89
+2016-07-12 02:24:52.220 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@630bf683
+2016-07-12 02:24:52.228 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@16a2ed51
+2016-07-12 02:24:52.228 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@16a2ed51
+2016-07-12 02:24:52.229 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2e7bf7b7
+2016-07-12 02:24:52.233 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@4ed5a1b0
+2016-07-12 02:24:52.234 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4ed5a1b0
+2016-07-12 02:24:52.244 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@6e31d989
+2016-07-12 02:24:52.244 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6e31d989
+2016-07-12 02:24:52.246 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5261ec9
+2016-07-12 02:24:52.247 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@72a2312e
+2016-07-12 02:24:52.249 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@57e388c3
+2016-07-12 02:24:52.252 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@55fdf7f9
+2016-07-12 02:24:52.252 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@55fdf7f9
+2016-07-12 02:24:52.253 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3610f277
+2016-07-12 02:24:52.254 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@c689973
+2016-07-12 02:24:52.257 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@41fa769c
+2016-07-12 02:24:52.258 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@40113163
+2016-07-12 02:24:52.266 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@71a3e05c
+2016-07-12 02:24:52.266 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@39c85c1a
+2016-07-12 02:24:52.266 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2b148329
+2016-07-12 02:24:52.266 DEBUG 29487 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@62c72501
+2016-07-12 02:24:52.301  INFO 29487 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-12 02:24:52.321 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2016-07-12 02:24:52.324 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2016-07-12 02:24:52.324 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2016-07-12 02:24:52.325 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2016-07-12 02:24:52.326 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2016-07-12 02:24:52.327 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2016-07-12 02:24:52.328 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2016-07-12 02:24:52.328 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2016-07-12 02:24:52.329 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2016-07-12 02:24:52.330 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2016-07-12 02:24:52.336 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2016-07-12 02:24:52.338 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2016-07-12 02:24:52.339 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2016-07-12 02:24:52.343 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2016-07-12 02:24:52.344 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2016-07-12 02:24:52.355 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Preparing to build session factory with filters : {}
+2016-07-12 02:24:52.881 DEBUG 29487 --- [main] o.h.e.jdbc.internal.JdbcServicesImpl     : Database ->
+       name : H2
+    version : 1.4.191 (2016-01-21)
+      major : 1
+      minor : 4
+2016-07-12 02:24:52.881 DEBUG 29487 --- [main] o.h.e.jdbc.internal.JdbcServicesImpl     : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.191 (2016-01-21)
+      major : 1
+      minor : 4
+2016-07-12 02:24:52.881 DEBUG 29487 --- [main] o.h.e.jdbc.internal.JdbcServicesImpl     : JDBC version : 4.0
+2016-07-12 02:24:52.883 DEBUG 29487 --- [main] o.h.e.j.c.i.StandardRefCursorSupport     : Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+2016-07-12 02:24:52.942  INFO 29487 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-12 02:24:52.979 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing hbm.xml files
+2016-07-12 02:24:52.979 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Process annotated classes
+2016-07-12 02:24:52.981 DEBUG 29487 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.ileossa.hwo.model.Caca
+2016-07-12 02:24:53.003 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2016-07-12 02:24:53.010 DEBUG 29487 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Caca
+2016-07-12 02:24:53.014 DEBUG 29487 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.ileossa.hwo.model.Caca on table caca
+2016-07-12 02:24:53.032 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.035 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2016-07-12 02:24:53.040 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:id]
+2016-07-12 02:24:53.043 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2016-07-12 02:24:53.046 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2016-07-12 02:24:53.049 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=active, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.050 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property active with lazy=false
+2016-07-12 02:24:53.050 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:active]
+2016-07-12 02:24:53.050 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for active
+2016-07-12 02:24:53.050 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property active
+2016-07-12 02:24:53.051 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.052 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property email with lazy=false
+2016-07-12 02:24:53.053 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:email]
+2016-07-12 02:24:53.054 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for email
+2016-07-12 02:24:53.054 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property email
+2016-07-12 02:24:53.055 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=group, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.056 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property group with lazy=false
+2016-07-12 02:24:53.059 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:group]
+2016-07-12 02:24:53.060 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for group
+2016-07-12 02:24:53.060 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property group
+2016-07-12 02:24:53.061 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.061 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property password with lazy=false
+2016-07-12 02:24:53.061 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:password]
+2016-07-12 02:24:53.061 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for password
+2016-07-12 02:24:53.061 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property password
+2016-07-12 02:24:53.062 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=pseudo, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.062 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property pseudo with lazy=false
+2016-07-12 02:24:53.062 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:pseudo]
+2016-07-12 02:24:53.062 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for pseudo
+2016-07-12 02:24:53.062 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property pseudo
+2016-07-12 02:24:53.063 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(caca), mappingColumn=role, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.063 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property role with lazy=false
+2016-07-12 02:24:53.063 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.model.Caca:role]
+2016-07-12 02:24:53.063 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for role
+2016-07-12 02:24:53.063 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property role
+2016-07-12 02:24:53.065 DEBUG 29487 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.ileossa.hwo.Customers
+2016-07-12 02:24:53.065 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2016-07-12 02:24:53.065 DEBUG 29487 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Customers
+2016-07-12 02:24:53.065 DEBUG 29487 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.ileossa.hwo.Customers on table customers
+2016-07-12 02:24:53.066 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(customers), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.066 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2016-07-12 02:24:53.066 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.Customers:id]
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(customers), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property firstName with lazy=false
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.Customers:firstName]
+2016-07-12 02:24:53.067 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for firstName
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property firstName
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(customers), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property lastName with lazy=false
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.ileossa.hwo.Customers:lastName]
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for lastName
+2016-07-12 02:24:53.068 DEBUG 29487 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property lastName
+2016-07-12 02:24:53.069 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2016-07-12 02:24:53.070 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for active
+2016-07-12 02:24:53.071 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for email
+2016-07-12 02:24:53.071 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for group
+2016-07-12 02:24:53.071 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for password
+2016-07-12 02:24:53.071 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for pseudo
+2016-07-12 02:24:53.071 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for role
+2016-07-12 02:24:53.072 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2016-07-12 02:24:53.072 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for firstName
+2016-07-12 02:24:53.073 DEBUG 29487 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for lastName
+2016-07-12 02:24:53.074 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing fk mappings (*ToOne and JoinedSubclass)
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing collection mappings
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing native query and ResultSetMapping mappings
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing association property references
+2016-07-12 02:24:53.075 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Creating tables' unique integer identifiers
+2016-07-12 02:24:53.076 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing foreign key constraints
+2016-07-12 02:24:53.081 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Automatic flush during beforeCompletion(): disabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Automatic session close at end of transaction: disabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : JDBC batch size: 15
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : JDBC batch updates for versioned data: disabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Scrollable result sets: enabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Wrap result sets: disabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : JDBC3 getGeneratedKeys(): enabled
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : multi-tenancy strategy : NONE
+2016-07-12 02:24:53.082 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Connection release mode: auto
+2016-07-12 02:24:53.086 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Using BatchFetchStyle : LEGACY
+2016-07-12 02:24:53.087 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Default batch fetch size: 1
+2016-07-12 02:24:53.087 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Generate SQL with comments: disabled
+2016-07-12 02:24:53.087 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Order SQL updates by primary key: disabled
+2016-07-12 02:24:53.087 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Order SQL inserts for batching: disabled
+2016-07-12 02:24:53.087 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Default null ordering: none
+2016-07-12 02:24:53.089 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+2016-07-12 02:24:53.093  INFO 29487 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-12 02:24:53.094 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Query language substitutions: {}
+2016-07-12 02:24:53.094 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : JPA-QL strict compliance: disabled
+2016-07-12 02:24:53.094 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Second-level cache: enabled
+2016-07-12 02:24:53.094 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Query cache: disabled
+2016-07-12 02:24:53.095 DEBUG 29487 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2016-07-12 02:24:53.097 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Optimize cache for minimal puts: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Structured second-level cache entries: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Second-level cache direct-reference entries: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Automatic eviction of collection cache: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Statistics: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Deleted entity synthetic identifier rollback: disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Default entity-mode: pojo
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Named query checking : enabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : Allow initialization of lazy state outside session : : disabled
+2016-07-12 02:24:53.098 DEBUG 29487 --- [main] org.hibernate.cfg.SettingsFactory        : JTA Track by Thread: enabled
+2016-07-12 02:24:53.113 DEBUG 29487 --- [main] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2016-07-12 02:24:53.123 DEBUG 29487 --- [main] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2016-07-12 02:24:53.124 DEBUG 29487 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.91-b14, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, idea.launcher.port=7539, user.country=FR, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, hibernate.ejb.naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/ileossa/workspace/HomeWorkOrganizer, PID=29487, javax.persistence.sharedCache.mode=UNSPECIFIED, java.runtime.version=1.8.0_91-8u91-b14-0ubuntu4~14.04-b14, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, org.jboss.logging.provider=slf4j, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/opt/idea-IU-143.2287.1/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, spring.beaninfo.ignore=true, hibernate.ejb.persistenceUnitName=default, java.specification.name=Java Platform API Specification, java.class.version=52.0, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@7b351446, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=3.13.0-91-generic, LOG_FILE=LOGS/Home Work Organizere533f552c908f0fd40f17ccc32d96ef9.log, user.home=/home/ileossa, catalina.useNaming=false, user.timezone=Europe/Paris, java.awt.printerjob=sun.print.PSPrinterJob, java.specification.version=1.8, idea.launcher.bin.path=/opt/idea-IU-143.2287.1/bin, file.encoding=UTF-8, javax.persistence.nonJtaDataSource=org.apache.tomcat.jdbc.pool.DataSource@244418a{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.h2.Driver; maxActive=100; maxIdle=100; minIdle=10; initialSize=10; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE; username=sa; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=30000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }, catalina.home=/tmp/tomcat.6813150535954160539.8080, user.name=ileossa, java.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/home/ileossa/workspace/HomeWorkOrganizer/target/classes:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.3.5.RELEASE/spring-boot-starter-web-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter/1.3.5.RELEASE/spring-boot-starter-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot/1.3.5.RELEASE/spring-boot-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.3.5.RELEASE/spring-boot-autoconfigure-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.3.5.RELEASE/spring-boot-starter-logging-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/ileossa/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/ileossa/.m2/repository/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar:/home/ileossa/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.jar:/home/ileossa/.m2/repository/org/yaml/snakeyaml/1.16/snakeyaml-1.16.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.3.5.RELEASE/spring-boot-starter-tomcat-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.33/tomcat-embed-core-8.0.33.jar:/home/ileossa/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.33/tomcat-embed-el-8.0.33.jar:/home/ileossa/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.33/tomcat-embed-logging-juli-8.0.33.jar:/home/ileossa/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.33/tomcat-embed-websocket-8.0.33.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-validation/1.3.5.RELEASE/spring-boot-starter-validation-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar:/home/ileossa/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/home/ileossa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.jar:/home/ileossa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.6/jackson-annotations-2.6.6.jar:/home/ileossa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar:/home/ileossa/.m2/repository/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/ileossa/.m2/repository/org/springframework/spring-beans/4.2.6.RELEASE/spring-beans-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-webmvc/4.2.6.RELEASE/spring-webmvc-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-expression/4.2.6.RELEASE/spring-expression-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.3.5.RELEASE/spring-boot-starter-data-jpa-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.3.5.RELEASE/spring-boot-starter-aop-1.3.5.RELEASE.jar:/home/ileossa/.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar:/home/ileossa/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar:/home/ileossa/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/home/ileossa/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/home/ileossa/.m2/repository/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar:/home/ileossa/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/ileossa/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/ileossa/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/ileossa/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/ileossa/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/home/ileossa/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/ileossa/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/ileossa/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/home/ileossa/.m2/repository/org/springframework/data/spring-data-jpa/1.9.4.RELEASE/spring-data-jpa-1.9.4.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/data/spring-data-commons/1.11.4.RELEASE/spring-data-commons-1.11.4.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-orm/4.2.6.RELEASE/spring-orm-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/spring-tx/4.2.6.RELEASE/spring-tx-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar:/home/ileossa/.m2/repository/org/springframework/spring-aspects/4.2.6.RELEASE/spring-aspects-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/hsqldb/hsqldb/2.3.3/hsqldb-2.3.3.jar:/home/ileossa/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.3.3.RELEASE/spring-boot-starter-jdbc-1.3.3.RELEASE.jar:/home/ileossa/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.33/tomcat-jdbc-8.0.33.jar:/home/ileossa/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.33/tomcat-juli-8.0.33.jar:/home/ileossa/.m2/repository/org/springframework/spring-jdbc/4.2.6.RELEASE/spring-jdbc-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/org/postgresql/postgresql/9.4-1201-jdbc4/postgresql-9.4-1201-jdbc4.jar:/home/ileossa/.m2/repository/com/h2database/h2/1.4.191/h2-1.4.191.jar:/home/ileossa/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ileossa/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar:/home/ileossa/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/ileossa/.m2/repository/org/projectlombok/lombok/1.16.6/lombok-1.16.6.jar:/home/ileossa/.m2/repository/io/springfox/springfox-swagger2/2.4.0/springfox-swagger2-2.4.0.jar:/home/ileossa/.m2/repository/io/swagger/swagger-annotations/1.5.6/swagger-annotations-1.5.6.jar:/home/ileossa/.m2/repository/io/swagger/swagger-models/1.5.6/swagger-models-1.5.6.jar:/home/ileossa/.m2/repository/io/springfox/springfox-spi/2.4.0/springfox-spi-2.4.0.jar:/home/ileossa/.m2/repository/io/springfox/springfox-core/2.4.0/springfox-core-2.4.0.jar:/home/ileossa/.m2/repository/io/springfox/springfox-schema/2.4.0/springfox-schema-2.4.0.jar:/home/ileossa/.m2/repository/io/springfox/springfox-swagger-common/2.4.0/springfox-swagger-common-2.4.0.jar:/home/ileossa/.m2/repository/io/springfox/springfox-spring-web/2.4.0/springfox-spring-web-2.4.0.jar:/home/ileossa/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/ileossa/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar:/home/ileossa/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/ileossa/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/home/ileossa/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/home/ileossa/.m2/repository/io/springfox/springfox-swagger-ui/2.2.2/springfox-swagger-ui-2.2.2.jar:/opt/idea-IU-143.2287.1/lib/idea_rt.jar, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, javax.persistence.validation.mode=AUTO, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.java.command=com.intellij.rt.execution.application.AppMain com.ileossa.hwo.LauncherApp --spring.output.ansi.enabled=always, java.specification.vendor=Oracle Corporation, user.language=fr, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_91, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, java.awt.headless=true, catalina.base=/tmp/tomcat.6813150535954160539.8080, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=create-drop, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+2016-07-12 02:24:53.140 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2016-07-12 02:24:53.140 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2016-07-12 02:24:53.141 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2016-07-12 02:24:53.141 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2016-07-12 02:24:53.141 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2016-07-12 02:24:53.141 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2016-07-12 02:24:53.227 DEBUG 29487 --- [main] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2016-07-12 02:24:53.231 DEBUG 29487 --- [main] org.hibernate.engine.spi.CascadeStyles   : External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2016-07-12 02:24:53.248 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.249 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.ileossa.hwo.model.Caca
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from caca where id =?
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select caca_.id, caca_.active as active2_0_, caca_.email as email3_0_, caca_.group as group4_0_, caca_.password as password5_0_, caca_.pseudo as pseudo6_0_, caca_.role as role7_0_ from caca caca_ where caca_.id=?
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into caca (active, email, group, password, pseudo, role, id) values (?, ?, ?, ?, ?, ?, ?)
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update caca set active=?, email=?, group=?, password=?, pseudo=?, role=? where id=?
+2016-07-12 02:24:53.429 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from caca where id=?
+2016-07-12 02:24:53.430 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Identity insert: insert into caca (id, active, email, group, password, pseudo, role) values (null, ?, ?, ?, ?, ?, ?)
+2016-07-12 02:24:53.455 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53d6e959]
+2016-07-12 02:24:53.458 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.458 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.458 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.459 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.459 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.459 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.459 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.474 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.477 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [NONE]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26da1ba2]
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.479 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [READ]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2407a36c]
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.480 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [UPGRADE]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28b8f98a]
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.481 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [UPGRADE_NOWAIT]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22cb3d59]
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.482 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.483 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [UPGRADE_SKIPLOCKED]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cff729b]
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.484 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.485 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.486 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [FORCE]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.486 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b8b5020]
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.487 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.488 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.489 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [PESSIMISTIC_READ]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5a7b309b]
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.490 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.491 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.492 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [PESSIMISTIC_WRITE]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.492 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7739aac4]
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.493 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [PESSIMISTIC_FORCE_INCREMENT]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=? for update
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36c07c75]
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.494 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.495 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [OPTIMISTIC]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d850a25]
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : active
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : group
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : pseudo
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : role
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.496 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.497 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.model.Caca)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.model.Caca, querySpaceUid=<gen:0>, path=com.ileossa.hwo.model.Caca)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.model.Caca)
+          - SQL table alias mapping - caca0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-07-12 02:24:53.497 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.model.Caca [OPTIMISTIC_FORCE_INCREMENT]: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.522 DEBUG 29487 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.ileossa.hwo.model.Caca: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.523 DEBUG 29487 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.ileossa.hwo.model.Caca: select caca0_.id as id1_0_0_, caca0_.active as active2_0_0_, caca0_.email as email3_0_0_, caca0_.group as group4_0_0_, caca0_.password as password5_0_0_, caca0_.pseudo as pseudo6_0_0_, caca0_.role as role7_0_0_ from caca caca0_ where caca0_.id=?
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.ileossa.hwo.Customers
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from customers where id =?
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select customers_.id, customers_.first_name as first_na2_1_, customers_.last_name as last_nam3_1_ from customers customers_ where customers_.id=?
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into customers (first_name, last_name, id) values (?, ?, ?)
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update customers set first_name=?, last_name=? where id=?
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from customers where id=?
+2016-07-12 02:24:53.524 DEBUG 29487 --- [main] o.h.p.entity.AbstractEntityPersister     :  Identity insert: insert into customers (id, first_name, last_name) values (null, ?, ?)
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3dec3f87]
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.525 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [NONE]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5dbab232]
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [READ]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@595f9916]
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.526 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [UPGRADE]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28768e25]
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.527 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [UPGRADE_NOWAIT]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@143fefaf]
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.528 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [UPGRADE_SKIPLOCKED]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46468f0]
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [FORCE]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@34a6d9db]
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.529 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [PESSIMISTIC_READ]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@756808cc]
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.530 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.531 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.531 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [PESSIMISTIC_WRITE]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5012c571]
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.532 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.533 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.533 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [PESSIMISTIC_FORCE_INCREMENT]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=? for update
+2016-07-12 02:24:53.533 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@511da44f]
+2016-07-12 02:24:53.533 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.533 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.534 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.534 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.539 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.540 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [OPTIMISTIC]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.541 DEBUG 29487 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a0b6a]
+2016-07-12 02:24:53.541 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : firstName
+2016-07-12 02:24:53.541 DEBUG 29487 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastName
+2016-07-12 02:24:53.541 DEBUG 29487 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2016-07-12 02:24:53.542 DEBUG 29487 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2016-07-12 02:24:53.542 DEBUG 29487 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.ileossa.hwo.Customers)
+    - Returns
+       - EntityReturnImpl(entity=com.ileossa.hwo.Customers, querySpaceUid=<gen:0>, path=com.ileossa.hwo.Customers)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ileossa.hwo.Customers)
+          - SQL table alias mapping - customers0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2016-07-12 02:24:53.542 DEBUG 29487 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.ileossa.hwo.Customers [OPTIMISTIC_FORCE_INCREMENT]: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.542 DEBUG 29487 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.ileossa.hwo.Customers: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.543 DEBUG 29487 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.ileossa.hwo.Customers: select customers0_.id as id1_1_0_, customers0_.first_name as first_na2_1_0_, customers0_.last_name as last_nam3_1_0_ from customers customers0_ where customers0_.id=?
+2016-07-12 02:24:53.545 DEBUG 29487 --- [main] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@71d55b7e
+2016-07-12 02:24:53.545 DEBUG 29487 --- [main] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 917e7b59-a829-4fb1-92df-9557bfc73586 (<unnamed>)
+2016-07-12 02:24:53.545 DEBUG 29487 --- [main] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2016-07-12 02:24:53.545 DEBUG 29487 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing hbm.xml files
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Process annotated classes
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing fk mappings (*ToOne and JoinedSubclass)
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing collection mappings
+2016-07-12 02:24:53.549 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing native query and ResultSetMapping mappings
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing association property references
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Creating tables' unique integer identifiers
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing foreign key constraints
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing hbm.xml files
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Process annotated classes
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing fk mappings (*ToOne and JoinedSubclass)
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing collection mappings
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing native query and ResultSetMapping mappings
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing association property references
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Creating tables' unique integer identifiers
+2016-07-12 02:24:53.550 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing foreign key constraints
+2016-07-12 02:24:53.551 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.551 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.551 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.551 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.552  INFO 29487 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-12 02:24:53.552 DEBUG 29487 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Import file not found: /import.sql
+2016-07-12 02:24:53.554 DEBUG 29487 --- [main] org.hibernate.SQL                        : drop table caca if exists
+2016-07-12 02:24:53.555 DEBUG 29487 --- [main] org.hibernate.SQL                        : drop table customers if exists
+2016-07-12 02:24:53.555 DEBUG 29487 --- [main] org.hibernate.SQL                        : create table caca (id integer generated by default as identity, active integer not null, email varchar(255), group varchar(255), password varchar(255), pseudo varchar(255), role varchar(255), primary key (id))
+2016-07-12 02:24:53.557 ERROR 29487 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: create table caca (id integer generated by default as identity, active integer not null, email varchar(255), group varchar(255), password varchar(255), pseudo varchar(255), role varchar(255), primary key (id))
+2016-07-12 02:24:53.558 ERROR 29487 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Syntax error in SQL statement "CREATE TABLE CACA (ID INTEGER GENERATED BY DEFAULT AS IDENTITY, ACTIVE INTEGER NOT NULL, EMAIL VARCHAR(255), GROUP[*] VARCHAR(255), PASSWORD VARCHAR(255), PSEUDO VARCHAR(255), ROLE VARCHAR(255), PRIMARY KEY (ID)) "; expected "identifier"; SQL statement:
+create table caca (id integer generated by default as identity, active integer not null, email varchar(255), group varchar(255), password varchar(255), pseudo varchar(255), role varchar(255), primary key (id)) [42001-191]
+2016-07-12 02:24:53.558 DEBUG 29487 --- [main] org.hibernate.SQL                        : create table customers (id bigint generated by default as identity, first_name varchar(255), last_name varchar(255), primary key (id))
+2016-07-12 02:24:53.560  INFO 29487 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing hbm.xml files
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Process annotated classes
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing fk mappings (*ToOne and JoinedSubclass)
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing collection mappings
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing native query and ResultSetMapping mappings
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing association property references
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Creating tables' unique integer identifiers
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing foreign key constraints
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing hbm.xml files
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Process annotated classes
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing fk mappings (*ToOne and JoinedSubclass)
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing extends queue
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing collection mappings
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing native query and ResultSetMapping mappings
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing association property references
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Creating tables' unique integer identifiers
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] org.hibernate.cfg.Configuration          : Processing foreign key constraints
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Setting dialect [org.hibernate.dialect.H2Dialect]
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] o.h.internal.NamedQueryRepository        : Checking 0 named HQL queries
+2016-07-12 02:24:53.561 DEBUG 29487 --- [main] o.h.internal.NamedQueryRepository        : Checking 0 named SQL queries
+2016-07-12 02:24:53.565 DEBUG 29487 --- [main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2016-07-12 02:24:53.568 DEBUG 29487 --- [main] o.h.j.i.schemagen.JpaSchemaGenerator     : No actions specified; doing nothing
+2016-07-12 02:24:53.605 DEBUG 29487 --- [main] o.h.j.i.EntityManagerFactoryRegistry     : Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@7be94cd6
+2016-07-12 02:24:53.605 DEBUG 29487 --- [main] o.h.j.i.EntityManagerFactoryRegistry     : Registering EntityManagerFactory: default 
+2016-07-12 02:24:53.833 DEBUG 29487 --- [main] o.h.jpa.spi.AbstractEntityManagerImpl    : Mark transaction for rollback
+2016-07-12 02:24:53.857 DEBUG 29487 --- [main] o.h.jpa.spi.AbstractEntityManagerImpl    : Mark transaction for rollback
+2016-07-12 02:24:53.858 DEBUG 29487 --- [main] o.h.jpa.spi.AbstractEntityManagerImpl    : Mark transaction for rollback
+2016-07-12 02:24:53.859 DEBUG 29487 --- [main] o.h.jpa.spi.AbstractEntityManagerImpl    : Mark transaction for rollback
+2016-07-12 02:24:54.598 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:24:54.635 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 request handler methods found on class com.ileossa.hwo.GreetingController: {public com.ileossa.hwo.Greeting com.ileossa.hwo.GreetingController.sayHello(java.lang.String)={[/hello-world],methods=[GET]}}
+2016-07-12 02:24:54.637  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello-world],methods=[GET]}" onto public com.ileossa.hwo.Greeting com.ileossa.hwo.GreetingController.sayHello(java.lang.String)
+2016-07-12 02:24:54.647 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 request handler methods found on class com.ileossa.hwo.controller.UserController: {public java.util.List com.ileossa.hwo.controller.UserController.listMemberGroup(java.lang.String)={[/user],methods=[GET]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.getUser(int) throws com.ileossa.hwo.exceptions.UserNotFoundException={[/user/{id}],methods=[GET]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.connectUser(java.lang.String,java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException={[/user/authenticate],methods=[POST]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.newUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)={[/user],methods=[POST]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.promoteUser(int,java.lang.String,java.lang.String) throws com.ileossa.hwo.exceptions.UserErrorPatch={[/user/promote],methods=[POST]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.banUser(java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException={[/user/ban],methods=[POST]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.userChangePassword(int,java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException={[/user],methods=[PUT]}, public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.test(java.lang.String)={[/user/test],methods=[POST]}}
+2016-07-12 02:24:54.647  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public java.util.List<com.ileossa.hwo.model.Caca> com.ileossa.hwo.controller.UserController.listMemberGroup(java.lang.String)
+2016-07-12 02:24:54.647  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.getUser(int) throws com.ileossa.hwo.exceptions.UserNotFoundException
+2016-07-12 02:24:54.647  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/authenticate],methods=[POST]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.connectUser(java.lang.String,java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException
+2016-07-12 02:24:54.647  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.newUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2016-07-12 02:24:54.648  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/promote],methods=[POST]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.promoteUser(int,java.lang.String,java.lang.String) throws com.ileossa.hwo.exceptions.UserErrorPatch
+2016-07-12 02:24:54.648  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/ban],methods=[POST]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.banUser(java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException
+2016-07-12 02:24:54.648  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.userChangePassword(int,java.lang.String) throws com.ileossa.hwo.exceptions.UserNotFoundException
+2016-07-12 02:24:54.648  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[POST]}" onto public com.ileossa.hwo.model.Caca com.ileossa.hwo.controller.UserController.test(java.lang.String)
+2016-07-12 02:24:54.660 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 request handler methods found on class springfox.documentation.swagger2.web.Swagger2Controller: {public org.springframework.http.ResponseEntity springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)={[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}}
+2016-07-12 02:24:54.660  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-07-12 02:24:54.662 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 request handler methods found on class springfox.documentation.swagger.web.ApiResourceController: {org.springframework.http.ResponseEntity springfox.documentation.swagger.web.ApiResourceController.swaggerResources()={[/swagger-resources]}, org.springframework.http.ResponseEntity springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()={[/configuration/security]}, org.springframework.http.ResponseEntity springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()={[/configuration/ui]}}
+2016-07-12 02:24:54.663  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-07-12 02:24:54.664  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-07-12 02:24:54.665  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-07-12 02:24:54.678 DEBUG 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}, public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}}
+2016-07-12 02:24:54.678  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-12 02:24:54.679  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-12 02:24:55.148 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2016-07-12 02:24:55.148 DEBUG 29487 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2016-07-12 02:24:55.148 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2016-07-12 02:24:55.148 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy58
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2016-07-12 02:24:55.149 DEBUG 29487 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2016-07-12 02:24:55.196  INFO 29487 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:24:55.266 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:24:55.267 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2016-07-12 02:24:55.267 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2016-07-12 02:24:55.267 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2016-07-12 02:24:55.267 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'launcherApp': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'greetingController': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'userController': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swagger2Controller': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'licenseMapperImpl': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'modelMapperImpl': no URL paths identified
+2016-07-12 02:24:55.270 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterMapperImpl': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityMapperImpl': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serviceModelToSwagger2MapperImpl': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'vendorExtensionsMapperImpl': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiDescriptionLookup': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiDescriptionReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiDocumentationScanner': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiListingReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiListingReferenceScanner': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiListingScanner': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiModelReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'cachingOperationReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mediaTypeReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiOperationReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'cachingOperationNameGenerator': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultOperationReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultTagsProvider': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationDeprecatedReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationModelsProvider': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationParameterReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationParameterRequestConditionReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationResponseClassReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationTagsReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'responseMessagesReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'expandedParameterBuilder': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'modelAttributeParameterExpander': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterDataTypeReader': no URL paths identified
+2016-07-12 02:24:55.271 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterDefaultReader': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterMultiplesReader': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterNameReader': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterRequiredReader': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterTypeReader': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'documentationPluginsBootstrapper': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'documentationPluginsManager': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'webMvcRequestHandlerProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationPathDecorator': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pathMappingDecorator': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pathSanitizer': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'queryStringUriTemplateDecorator': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'cachingModelDependencyProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'cachingModelProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultModelDependencyProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultModelProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'schemaPluginsManager': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'accessorsProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'cachingModelPropertiesProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'factoryMethodProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'fieldProvider': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectMapperBeanPropertyNamingStrategy': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'optimized': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'typeNameExtractor': no URL paths identified
+2016-07-12 02:24:55.272 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiModelBuilder': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiModelPropertyPropertyBuilder': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiModelTypeNameProvider': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationAuthReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationHiddenReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationHttpMethodReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationImplicitParameterReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationImplicitParametersReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationNicknameIntoUniqueIdReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationNotesReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationPositionReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationSummaryReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerMediaTypeReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerOperationModelsProvider': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerOperationResponseClassReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerOperationTagsReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerResponseMessageReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'vendorExtensionsReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerParameterDescriptionReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerExpandedParameterBuilder': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiResourceController': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'classOrApiAnnotationResourceGrouping': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'inMemorySwaggerResourcesProvider': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerApiListingReader': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springfox.documentation.schema.configuration.ModelsConfiguration': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'typeResolver': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'modelBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.273 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'modelPropertyBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'typeNameProviderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springfox.documentation.spring.web.SpringfoxWebMvcConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectMapperConfigurer': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceGroupCache': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jsonSerializer': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaults': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'documentationPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'apiListingBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'parameterBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'expandedParameterBuilderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceGroupingStrategyRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'operationModelsProviderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultsProviderPluginRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pathDecoratorRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springfox.documentation.swagger.configuration.SwaggerCommonConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swaggerProperties': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'swagger2Module': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'newsApi': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'userRepository': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2016-07-12 02:24:55.274 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2016-07-12 02:24:55.275 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2016-07-12 02:24:55.276 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaVendorAdapter': no URL paths identified
+2016-07-12 02:24:55.277 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactory': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jpa.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'h2Console': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.h2.console.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified
+2016-07-12 02:24:55.278 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$TransactionManagementConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2016-07-12 02:24:55.279 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2016-07-12 02:24:55.280 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2016-07-12 02:24:55.280 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2016-07-12 02:24:55.280 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2016-07-12 02:24:55.280 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2016-07-12 02:24:55.280 DEBUG 29487 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2016-07-12 02:24:55.292  INFO 29487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 02:24:55.293  INFO 29487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 02:24:55.319 DEBUG 29487 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:24:55.365  INFO 29487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-12 02:24:55.687  INFO 29487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-12 02:24:55.700 DEBUG 29487 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2016-07-12 02:24:55.702 DEBUG 29487 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@21280cbb]
+2016-07-12 02:24:55.702 DEBUG 29487 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1cc708a7]
+2016-07-12 02:24:55.702 DEBUG 29487 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@995ad50]
+2016-07-12 02:24:55.702  INFO 29487 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-07-12 02:24:55.736  INFO 29487 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2016-07-12 02:24:55.746  INFO 29487 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-07-12 02:24:56.108  INFO 29487 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-12 02:24:56.109 DEBUG 29487 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [server.ports] PropertySource with highest search precedence
+2016-07-12 02:24:56.113  INFO 29487 --- [main] com.ileossa.hwo.LauncherApp              : Started LauncherApp in 10.1 seconds (JVM running for 10.443)
+2016-07-12 02:59:09.604  INFO 29487 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@692f203f: startup date [Tue Jul 12 02:24:46 CEST 2016]; root of context hierarchy
+2016-07-12 02:59:09.607  INFO 29487 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-12 02:59:09.613  INFO 29487 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-07-12 02:59:09.613 DEBUG 29487 --- [Thread-3] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2016-07-12 02:59:09.613  INFO 29487 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-12 02:59:09.614 DEBUG 29487 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : Import file not found: /import.sql
+2016-07-12 02:59:09.620 DEBUG 29487 --- [Thread-3] org.hibernate.SQL                        : drop table caca if exists
+2016-07-12 02:59:09.622 DEBUG 29487 --- [Thread-3] org.hibernate.SQL                        : drop table customers if exists
+2016-07-12 02:59:09.627  INFO 29487 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-12 02:59:09.627 DEBUG 29487 --- [Thread-3] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2016-07-12 02:59:09.627 DEBUG 29487 --- [Thread-3] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2016-07-12 02:59:09.628 DEBUG 29487 --- [Thread-3] o.h.j.i.EntityManagerFactoryRegistry     : Remove: name=default

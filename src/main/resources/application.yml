@@ -1,0 +1,85 @@
+spring:
+  profiles:
+    active: dev
+
+---
+#---------------------------------------------------
+#            GLOBAL CONFIGURATION
+#---------------------------------------------------
+
+info:
+  name: Home Work Organizer
+app:
+  description: ${info.name} est une application pour l'ESGI
+spring:
+  application:
+    name:  H.W.O APPLICATION
+application:
+  version: 1.0
+server:
+  port: 8080
+
+logging:
+  level:
+    com:
+      ileossa:
+        controller:
+          PlaylistController: WARM
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
+  file: LOGS/${info.name}${random.value}.log
+
+
+---
+#---------------------------------------------------
+#            DEVELOPER  MODE
+#---------------------------------------------------
+spring:
+  profiles: dev
+  jpa:
+    show-sql: false
+  jmx:
+    enabled: true
+  h2:
+    console:
+      enabled: true
+---
+#---------------------------------------------------
+#            TEST  MODE
+#---------------------------------------------------
+spring:
+  profiles: test
+  jpa:
+    show-sql: true
+  jmx:
+    enabled: true
+server:
+  port: 8080
+
+---
+#---------------------------------------------------
+#            PRODUCTION  MODE
+#---------------------------------------------------
+
+
+spring:
+  profiles: prod
+  datasource:
+    url: ${JDBC_DATABASE_URL}
+    driverClassName: org.postgresql.Driver
+    maxActive: 10
+    maxIdle: 5
+    min-idle: 2
+    initialSize: 5
+    removeAbandoned: true
+    platform: postgres
+    max-wait: 10000
+    test-on-borrow: true
+  jpa:
+    show-sql: false
+  jmx:
+    enabled: true
+server:
+  port: 0
