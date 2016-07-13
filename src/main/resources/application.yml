@@ -31,6 +31,11 @@ logging:
       hibernate: ERROR
   file: LOGS/${info.name}${random.value}.log
 
+multipart:
+  max-file-size: 10Mb
+  max-request-size: 10Mb
+
+
 
 ---
 #---------------------------------------------------
@@ -39,7 +44,7 @@ logging:
 spring:
   profiles: dev
   jpa:
-    show-sql: false
+    show-sql: true
   jmx:
     enabled: true
   h2:

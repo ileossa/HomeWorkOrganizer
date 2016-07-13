@@ -1,8 +1,0 @@
-2016-07-12 00:30:22.763 DEBUG 25246 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
-2016-07-12 00:30:22.773 DEBUG 25246 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
-2016-07-12 00:30:22.773 DEBUG 25246 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
-2016-07-12 00:30:22.773 DEBUG 25246 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
-2016-07-12 00:30:22.774 DEBUG 25246 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
-2016-07-12 00:30:22.841  INFO 25246 --- [main] com.ileossa.hwo.LauncherApp              : Starting LauncherApp on ileossa-laptop14 with PID 25246 (/home/ileossa/workspace/HomeWorkOrganizer/target/classes started by ileossa in /home/ileossa/workspace/HomeWorkOrganizer)
-2016-07-12 00:30:22.842  INFO 25246 --- [main] com.ileossa.hwo.LauncherApp              : The following profiles are active: dev
-2016-07-12 00:30:23.083  INFO 25246 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2609b277: startup date [Tue Jul 12 00:30:23 CEST 2016]; root of context hierarchy

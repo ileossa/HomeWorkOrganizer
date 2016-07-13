@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by ileossa on 12/07/16.
  */
 @RestController
-@RequestMapping()
+@RequestMapping("/")
 public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)

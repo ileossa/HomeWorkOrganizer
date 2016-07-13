@@ -74,16 +74,15 @@ public class UserController {
     public UserModel newUser(@RequestParam(value="pseudo") String pseudo,
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
-                             @RequestParam(value="group")  String group) {
+                             @RequestParam(value="group")  String group) throws UserCreateException {
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
         System.out.println("newUser()() toto");
-        if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
+        if(userRepository.findOneByEmail(email) != null && userRepository.findOneByPseudo(pseudo) != null)
         {
-            System.out.println("connard");
-            //throw new UserCreateException();
+            throw new UserCreateException();
         }
         UserModel userModel = new UserModel(pseudo, email, password, group, UserEnum.ETUDIANT.toString(), true);
         return userRepository.save(userModel);

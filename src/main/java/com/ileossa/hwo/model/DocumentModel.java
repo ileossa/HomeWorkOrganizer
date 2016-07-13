@@ -27,7 +27,7 @@ public class DocumentModel {
     private long id;
     private String classe;
     private String title;
-    private File file;
+    private String pathFile;
     private Date date;
     private Boolean isAccepted;
 
@@ -35,10 +35,10 @@ public class DocumentModel {
 
     }
 
-    public DocumentModel(String classe,String title,File file,Boolean isAccepted){
+    public DocumentModel(String classe,String title,String pathFile,Boolean isAccepted){
         this.classe = classe;
         this.title = title;
-        this.file = file;
+        this.pathFile = pathFile;
         this.isAccepted = isAccepted;
         this.date = new Date();
     }
