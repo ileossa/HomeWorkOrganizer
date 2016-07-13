@@ -1,7 +1,6 @@
 package com.ileossa.hwo;
 
-import com.ileossa.hwo.model.UserModel;
-import com.ileossa.hwo.repository.UserRepository;
+import com.ileossa.hwo.controller.DocumentController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -33,9 +32,9 @@ public class LauncherApp {
     @Bean
     CommandLineRunner init() {
         return (args) -> {
-            FileSystemUtils.deleteRecursively(new File(FileUploadController.ROOT));
+            FileSystemUtils.deleteRecursively(new File(DocumentController.ROOT));
 
-            Files.createDirectory(Paths.get(FileUploadController.ROOT));
+            Files.createDirectory(Paths.get(DocumentController.ROOT));
 
 
         };
