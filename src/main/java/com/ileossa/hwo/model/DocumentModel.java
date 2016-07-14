@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.print.Doc;
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -28,7 +29,7 @@ public class DocumentModel {
     private String classe;
     private String title;
     private String pathFile;
-    private Date date;
+    private String date;
     private Boolean isAccepted;
 
     protected DocumentModel(){
@@ -40,7 +41,9 @@ public class DocumentModel {
         this.title = title;
         this.pathFile = pathFile;
         this.isAccepted = isAccepted;
-        this.date = new Date();
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        this.date = format.format(date);
     }
 
 }

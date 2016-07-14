@@ -34,7 +34,7 @@ public class UserController {
 
 
     @RequestMapping(method = GET)
-    public List<UserModel> listMemberGroup(@RequestParam(value = "group") String classe){
+    public List<UserModel> listMemberGroup(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
         memberGroup = userRepository.findByClasse(classe);
         return memberGroup;
@@ -74,17 +74,22 @@ public class UserController {
     public UserModel newUser(@RequestParam(value="pseudo") String pseudo,
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
-                             @RequestParam(value="group")  String group) throws UserCreateException {
+                             @RequestParam(value="groupId")  String group) throws UserCreateException {
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
-        System.out.println("newUser()() toto");
+
+        String role = UserEnum.ETUDIANT.toString();
+
         if(userRepository.findOneByEmail(email) != null && userRepository.findOneByPseudo(pseudo) != null)
         {
             throw new UserCreateException();
         }
-        UserModel userModel = new UserModel(pseudo, email, password, group, UserEnum.ETUDIANT.toString(), true);
+        if(userRepository.findByClasse(group).isEmpty()){
+            role = UserEnum.DELEGUE.toString();
+        }
+        UserModel userModel = new UserModel(pseudo, email, password, group, role , true);
         return userRepository.save(userModel);
     }
 
