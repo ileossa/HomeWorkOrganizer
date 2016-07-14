@@ -26,7 +26,7 @@ public class ReponseController {
     private ResponseRepository responseRepository;
 
     @RequestMapping(method = POST)
-    public ResponseModel createReponse(@RequestParam(value = "disussionId") long discussionID,
+    public ResponseModel createReponse(@RequestParam(value = "discussionId") long discussionID,
                                        @RequestParam(value = "authorId")long authorId,
                                        @RequestParam(value = "text") String text){
         ResponseModel responseModel = new ResponseModel(discussionID,authorId,text);
@@ -36,7 +36,7 @@ public class ReponseController {
 
     @RequestMapping(method = GET)
     public List<ResponseModel> getListDiscussion(@RequestParam(value = "discussionId") long discussionId){
-        return responseRepository.findByDiscussionId(discussionId);
+        return responseRepository.findByDiscusionId(discussionId);
     }
 
 }

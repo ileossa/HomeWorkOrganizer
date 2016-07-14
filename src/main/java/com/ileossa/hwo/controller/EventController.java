@@ -30,7 +30,7 @@ public class EventController {
     public EventModel createEvent(@RequestParam(value = "groupeId") String groupeId,
                                   @RequestParam(value = "title") String title,
                                   @RequestParam(value = "desc") String desc,
-                                  @RequestParam(value = "time") Date time,
+                                  @RequestParam(value = "time") String time,
                                   @RequestParam(value = "matiere") String matiere) {
         EventModel eventModel = new EventModel(groupeId, title, desc, time, matiere);
         eventRepository.save(eventModel);
@@ -42,7 +42,7 @@ public class EventController {
                                   @RequestParam(value = "id") long id,
                                   @RequestParam(value = "title", defaultValue = "null") String title,
                                   @RequestParam(value = "desc", defaultValue = "null") String desc,
-                                  @RequestParam(value = "time", defaultValue = "null") Date time,
+                                  @RequestParam(value = "time", defaultValue = "null") String time,
                                   @RequestParam(value = "matiere", defaultValue = "null") String matiere) throws EventNotFoundException {
         if (eventRepository.findOne(id) != null) {
             EventModel eventModel = eventRepository.findOne(id);

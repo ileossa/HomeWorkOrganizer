@@ -9,6 +9,6 @@ import java.util.List;
  * Created by kevin on 12/07/2016.
  */
 public interface ResponseRepository extends CrudRepository<ResponseModel, Long> {
-    List<ResponseModel> findByDiscussionId(long discussionId);
+    List<ResponseModel> findByDiscusionId(long discusionId);
 }
 

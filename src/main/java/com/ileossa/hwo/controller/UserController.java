@@ -34,7 +34,7 @@ public class UserController {
 
 
     @RequestMapping(method = GET)
-    public List<UserModel> listMemberGroup(@RequestParam(value = "classe") String classe){
+    public List<UserModel> listMemberGroup(@RequestParam(value = "groupeId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
         memberGroup = userRepository.findByClasse(classe);
         return memberGroup;
@@ -74,16 +74,15 @@ public class UserController {
     public UserModel newUser(@RequestParam(value="pseudo") String pseudo,
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
-                             @RequestParam(value="group")  String group) {
+                             @RequestParam(value="groupeId")  String group) throws UserCreateException {
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
         System.out.println("newUser()() toto");
-        if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
+        if(userRepository.findOneByEmail(email) != null && userRepository.findOneByPseudo(pseudo) != null)
         {
-            System.out.println("connard");
-            //throw new UserCreateException();
+            throw new UserCreateException();
         }
         UserModel userModel = new UserModel(pseudo, email, password, group, UserEnum.ETUDIANT.toString(), true);
         return userRepository.save(userModel);
@@ -98,7 +97,7 @@ public class UserController {
 
         if(userRepository.findOne(idUser) != null){
             UserModel userModel = userRepository.findOne(idUser);
-            userModel.setClasse(newRole);
+            userModel.setRole(newRole);
             userRepository.save(userModel);
             return userModel;
         }
@@ -123,14 +122,48 @@ public class UserController {
 
     @RequestMapping(method = PUT )
     public UserModel userChangePassword(@RequestParam(value = "id") long idUser,
-                                        @RequestParam(value = "password") String password) throws UserNotFoundException {
+                                        @RequestParam(value = "current_password") String password,
+                                        @RequestParam(value = "new_password")String newPassword) throws UserNotFoundException, UserErrorPatch {
         if(userRepository.findOne(idUser)!=null){
             UserModel userModel = userRepository.findOne(idUser);
-            userModel.setPassword(password);
-            userRepository.save(userModel);
-            return userModel;
+            if(userModel.getPassword().equals(newPassword)) {
+                userModel.setPassword(password);
+                userRepository.save(userModel);
+                return userModel;
+            }else{
+                throw new UserErrorPatch();
+            }
         }else {
             throw new UserNotFoundException();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

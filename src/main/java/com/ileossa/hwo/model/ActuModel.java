@@ -4,10 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -26,7 +24,7 @@ public class ActuModel {
     private String classe;
     private String title;
     private String text;
-    private Date date;
+    private String date;
 
     protected ActuModel(){
 
@@ -36,6 +34,9 @@ public class ActuModel {
         this.classe = classe;
         this.title =title;
         this.text = text;
-        this.date = new Date();
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        this.date = format.format(date);
     }
-}
+
+ }

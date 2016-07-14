@@ -25,7 +25,7 @@ public class ActuController {
     private ActuRepository actuRepository;
 
     @RequestMapping(method = POST)
-    public ActuModel createActu(@RequestParam(value = "groupeid") String groupeId,
+    public ActuModel createActu(@RequestParam(value = "groupeId") String groupeId,
                                 @RequestParam(value = "title") String title,
                                 @RequestParam(value = "text") String text) {
         ActuModel actuModel = new ActuModel(groupeId, title, text);

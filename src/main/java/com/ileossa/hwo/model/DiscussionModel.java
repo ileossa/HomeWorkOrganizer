@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -27,7 +28,7 @@ public class DiscussionModel {
     private String sujet;
     private String text;
     private long authorId;
-    private java.util.Date Date;
+    private String date;
 
 
     protected DiscussionModel() {
@@ -38,6 +39,8 @@ public class DiscussionModel {
         this.sujet = sujet;
         this.text = text;
         this.authorId = authorId;
-        this.Date = new Date();
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        this.date = format.format(date);
     }
 }
