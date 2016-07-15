@@ -27,22 +27,24 @@ public class EventController {
     private EventRepository eventRepository;
 
     @RequestMapping(method = POST)
-    public EventModel createEvent(@RequestParam(value = "groupeId") String groupeId,
+    public EventModel createEvent(@RequestParam(value = "groupId") String groupeId,
                                   @RequestParam(value = "title") String title,
                                   @RequestParam(value = "desc") String desc,
                                   @RequestParam(value = "time") String time,
+                                  @RequestParam(value = "date") String date,
                                   @RequestParam(value = "matiere") String matiere) {
-        EventModel eventModel = new EventModel(groupeId, title, desc, time, matiere);
+        EventModel eventModel = new EventModel(groupeId, title, desc, time,date, matiere);
         eventRepository.save(eventModel);
         return eventModel;
     }
 
     @RequestMapping(method = PUT)
-    public EventModel updateEvent(@RequestParam(value = "groupeId", defaultValue = "null") String groupeId,
+    public EventModel updateEvent(@RequestParam(value = "groupId", defaultValue = "null") String groupeId,
                                   @RequestParam(value = "id") long id,
                                   @RequestParam(value = "title", defaultValue = "null") String title,
                                   @RequestParam(value = "desc", defaultValue = "null") String desc,
                                   @RequestParam(value = "time", defaultValue = "null") String time,
+                                  @RequestParam(value = "date", defaultValue = "null") String date,
                                   @RequestParam(value = "matiere", defaultValue = "null") String matiere) throws EventNotFoundException {
         if (eventRepository.findOne(id) != null) {
             EventModel eventModel = eventRepository.findOne(id);
@@ -55,10 +57,13 @@ public class EventController {
             if (!desc.equals("null")) {
                 eventModel.setDescription(desc);
             }
-            if (!time.equals(time)) {
+            if (!time.equals("null")) {
                 eventModel.setTime(time);
             }
-            if (!matiere.equals(matiere)) {
+            if (!date.equals("null")) {
+                eventModel.setTime(date);
+            }
+            if (!matiere.equals("null")) {
                 eventModel.setMatiere(matiere);
             }
 
@@ -77,7 +82,7 @@ public class EventController {
     }
 
     @RequestMapping(method = GET)
-    public List<EventModel> listEvent(@RequestParam(value = "groupeId") String groupe) {
+    public List<EventModel> listEvent(@RequestParam(value = "groupId") String groupe) {
         List<EventModel> listEvent = new ArrayList<>();
         listEvent = eventRepository.findByClasse(groupe);
         return listEvent;

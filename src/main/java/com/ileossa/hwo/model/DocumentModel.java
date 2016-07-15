@@ -12,6 +12,7 @@ import javax.print.Doc;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by kevin on 12/07/2016.
@@ -42,7 +43,8 @@ public class DocumentModel {
         this.pathFile = pathFile;
         this.isAccepted = isAccepted;
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy HH:mm");
+        format.setTimeZone(TimeZone.getTimeZone("Europe/Paris"));
         this.date = format.format(date);
     }
 

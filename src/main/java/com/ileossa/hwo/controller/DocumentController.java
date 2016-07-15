@@ -64,7 +64,7 @@ public class DocumentController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.ACCEPTED)
     public DocumentModel handleFileUpload(@RequestParam("file") MultipartFile file,
-                                   @RequestParam(value = "groupeId") String classe) throws EmptyFile, FailToUploadException {
+                                   @RequestParam(value = "groupId") String classe) throws EmptyFile, FailToUploadException {
 
         DocumentModel documentModel;
         if (!file.isEmpty()) {
@@ -84,7 +84,7 @@ public class DocumentController {
 
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<DocumentModel> getListFileWith(@RequestParam("groupeId")String group){
+    public List<DocumentModel> getListFileWith(@RequestParam("groupId")String group){
         return documentRepository.findByClasse(group);
     }
 

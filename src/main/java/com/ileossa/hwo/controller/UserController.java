@@ -5,8 +5,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 import com.ileossa.hwo.exceptions.UserCreateException;
 import com.ileossa.hwo.exceptions.UserErrorPatch;
 import com.ileossa.hwo.exceptions.UserNotFoundException;
+import com.ileossa.hwo.model.ForumModel;
 import com.ileossa.hwo.model.UserModel;
 import com.ileossa.hwo.model.UserEnum;
+import com.ileossa.hwo.repository.ForumRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,10 +33,13 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
+    @Autowired
+    private ForumRepository forumRepository;
+
 
 
     @RequestMapping(method = GET)
-    public List<UserModel> listMemberGroup(@RequestParam(value = "groupeId") String classe){
+    public List<UserModel> listMemberGroup(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
         memberGroup = userRepository.findByClasse(classe);
         return memberGroup;
@@ -74,17 +79,25 @@ public class UserController {
     public UserModel newUser(@RequestParam(value="pseudo") String pseudo,
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
-                             @RequestParam(value="groupeId")  String group) throws UserCreateException {
+                             @RequestParam(value="groupId")  String group) throws UserCreateException {
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
-        System.out.println("newUser()() toto");
-        if(userRepository.findOneByEmail(email) != null && userRepository.findOneByPseudo(pseudo) != null)
+
+        String role = UserEnum.ETUDIANT.toString();
+
+        if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
         {
             throw new UserCreateException();
         }
-        UserModel userModel = new UserModel(pseudo, email, password, group, UserEnum.ETUDIANT.toString(), true);
+
+        if(userRepository.findByClasse(group).isEmpty()){
+            role = UserEnum.DELEGUE.toString();
+            ForumModel forumModel = new ForumModel(group,"Général");
+            forumRepository.save(forumModel);
+        }
+        UserModel userModel = new UserModel(pseudo, email, password, group, role , true);
         return userRepository.save(userModel);
     }
 

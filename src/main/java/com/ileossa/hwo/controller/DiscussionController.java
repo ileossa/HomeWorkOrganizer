@@ -1,13 +1,12 @@
 package com.ileossa.hwo.controller;
 
+import com.ileossa.hwo.exceptions.DiscussionNotFroundException;
+import com.ileossa.hwo.exceptions.UserNotFoundException;
 import com.ileossa.hwo.model.DiscussionModel;
 import com.ileossa.hwo.repository.DiscusionRepository;
 import com.ileossa.hwo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,17 +26,27 @@ public class DiscussionController {
 
     @RequestMapping(method = POST)
     public DiscussionModel createDiscussion(@RequestParam(value = "forumId") long forumId,
-                                            @RequestParam(value = "sujet")String sujet,
+                                            @RequestParam(value = "sujet") String sujet,
                                             @RequestParam(value = "text") String text,
-                                            @RequestParam(value = "authorId") long authorId){
-        DiscussionModel discussionModel = new DiscussionModel(forumId,sujet,text,authorId);
+                                            @RequestParam(value = "author") String author,
+                                            @RequestParam(value = "authorId") long authorId) {
+        DiscussionModel discussionModel = new DiscussionModel(forumId, sujet, text, author, authorId);
         discusionRepository.save(discussionModel);
         return discussionModel;
     }
 
     @RequestMapping(method = GET)
-    public List<DiscussionModel> getListDiscussion(@RequestParam(value = "forumId") long forumID){
+    public List<DiscussionModel> getListDiscussion(@RequestParam(value = "forumId") long forumID) {
         return discusionRepository.findByForumId(forumID);
+    }
+
+    @RequestMapping(method = GET, value = "/{id}")
+    public DiscussionModel getDiscussion(@PathVariable long id) throws DiscussionNotFroundException {
+        if (discusionRepository.findOne(id) != null) {
+            return discusionRepository.findOne(id);
+        } else {
+            throw new DiscussionNotFroundException();
+        }
     }
 
 }

@@ -27,14 +27,14 @@ public class ForumController {
     private ForumRepository forumRepository;
 
     @RequestMapping(method = POST)
-    public ForumModel createForum(@RequestParam(value = "groupeId") String groupeId,
+    public ForumModel createForum(@RequestParam(value = "groupId") String groupeId,
                                   @RequestParam(value = "name") String name){
         ForumModel forumModel = new ForumModel(groupeId,name);
         forumRepository.save(forumModel);
         return forumModel;
     }
     @RequestMapping(method = GET)
-    public List<ForumModel> getListDiscussion(@RequestParam(value = "groupeId") String groupeId){
+    public List<ForumModel> getListDiscussion(@RequestParam(value = "groupId") String groupeId){
         return forumRepository.findByClasse(groupeId);
     }
 

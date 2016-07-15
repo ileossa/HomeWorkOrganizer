@@ -72,7 +72,7 @@ server:
 spring:
   profiles: prod
   datasource:
-    url: ${JDBC_DATABASE_URL}
+    url: ${DATABASE_URL}
     driverClassName: org.postgresql.Driver
     maxActive: 10
     maxIdle: 5

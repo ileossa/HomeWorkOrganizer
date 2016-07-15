@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by kevin on 12/07/2016.
@@ -28,19 +29,22 @@ public class DiscussionModel {
     private String sujet;
     private String text;
     private long authorId;
+    private String author;
     private String date;
 
 
     protected DiscussionModel() {
     }
 
-    public DiscussionModel(long forumId, String sujet, String text, long authorId) {
+    public DiscussionModel(long forumId, String sujet, String text,String author, long authorId) {
         this.forumId = forumId;
         this.sujet = sujet;
         this.text = text;
+        this.author = author;
         this.authorId = authorId;
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy HH:mm");
+        format.setTimeZone(TimeZone.getTimeZone("Europe/Paris"));
         this.date = format.format(date);
     }
 }

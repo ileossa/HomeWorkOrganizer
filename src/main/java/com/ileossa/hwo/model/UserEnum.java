@@ -4,6 +4,7 @@ public enum UserEnum {
 
 	ROOT,
 	ADMIN,
+	DELEGUE,
 	ETUDIANT,
 	VISITEUR
 }
