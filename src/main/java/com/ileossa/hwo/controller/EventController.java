@@ -33,11 +33,8 @@ public class EventController {
                                   @RequestParam(value = "time") String time,
                                   @RequestParam(value = "date") String date,
                                   @RequestParam(value = "matiere") String matiere) {
-<<<<<<< HEAD
-        EventModel eventModel = new EventModel(title, groupeId, desc, time, matiere);
-=======
+        
         EventModel eventModel = new EventModel(groupeId, title, desc, time,date, matiere);
->>>>>>> 19328fd28d33aca921b28503e79407dec099f167
         eventRepository.save(eventModel);
         return eventModel;
     }
