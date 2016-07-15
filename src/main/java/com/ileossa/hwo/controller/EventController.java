@@ -32,7 +32,7 @@ public class EventController {
                                   @RequestParam(value = "desc") String desc,
                                   @RequestParam(value = "time") String time,
                                   @RequestParam(value = "matiere") String matiere) {
-        EventModel eventModel = new EventModel(groupeId, title, desc, time, matiere);
+        EventModel eventModel = new EventModel(title, groupeId, desc, time, matiere);
         eventRepository.save(eventModel);
         return eventModel;
     }
@@ -79,7 +79,6 @@ public class EventController {
     @RequestMapping(method = GET)
     public List<EventModel> listEvent(@RequestParam(value = "groupId") String groupe) {
         List<EventModel> listEvent = new ArrayList<>();
-        listEvent = eventRepository.findByClasse(groupe);
-        return listEvent;
+        return eventRepository.findByClasse(groupe);
     }
 }

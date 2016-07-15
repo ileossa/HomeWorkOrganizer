@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: prod
 
 ---
 #---------------------------------------------------
@@ -79,12 +79,7 @@ spring:
     min-idle: 2
     initialSize: 5
     removeAbandoned: true
-    platform: postgres
-    max-wait: 10000
-    test-on-borrow: true
   jpa:
     show-sql: false
   jmx:
-    enabled: true
-server:
-  port: 0
+    enabled: false
