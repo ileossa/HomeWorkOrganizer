@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by kevin on 12/07/2016.
@@ -28,6 +29,7 @@ public class ResponseModel {
     private long id;
     private long discusionId;
     private long authorId;
+    private String author;
     private String date;
     private String text;
 
@@ -35,11 +37,13 @@ public class ResponseModel {
     protected ResponseModel() {
     }
 
-    public ResponseModel(long discusionId, long authorId, String text) {
+    public ResponseModel(long discusionId, long authorId, String author, String text) {
         this.discusionId = discusionId;
         this.authorId = authorId;
+        this.author = author;
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        format.setTimeZone(TimeZone.getTimeZone("Europe/Paris"));
         this.date = format.format(date);
         this.text = text;
     }

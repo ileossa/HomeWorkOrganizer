@@ -5,8 +5,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 import com.ileossa.hwo.exceptions.UserCreateException;
 import com.ileossa.hwo.exceptions.UserErrorPatch;
 import com.ileossa.hwo.exceptions.UserNotFoundException;
+import com.ileossa.hwo.model.ForumModel;
 import com.ileossa.hwo.model.UserModel;
 import com.ileossa.hwo.model.UserEnum;
+import com.ileossa.hwo.repository.ForumRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +32,9 @@ public class UserController {
 
 	@Autowired
 	private UserRepository userRepository;
+
+    @Autowired
+    private ForumRepository forumRepository;
 
 
 
@@ -82,12 +87,15 @@ public class UserController {
 
         String role = UserEnum.ETUDIANT.toString();
 
-        if(userRepository.findOneByEmail(email) != null && userRepository.findOneByPseudo(pseudo) != null)
+        if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
         {
             throw new UserCreateException();
         }
+
         if(userRepository.findByClasse(group).isEmpty()){
             role = UserEnum.DELEGUE.toString();
+            ForumModel forumModel = new ForumModel(group,"Général");
+            forumRepository.save(forumModel);
         }
         UserModel userModel = new UserModel(pseudo, email, password, group, role , true);
         return userRepository.save(userModel);

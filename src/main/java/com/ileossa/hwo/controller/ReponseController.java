@@ -28,8 +28,9 @@ public class ReponseController {
     @RequestMapping(method = POST)
     public ResponseModel createReponse(@RequestParam(value = "discussionId") long discussionID,
                                        @RequestParam(value = "authorId")long authorId,
+                                       @RequestParam(value = "author") String author,
                                        @RequestParam(value = "text") String text){
-        ResponseModel responseModel = new ResponseModel(discussionID,authorId,text);
+        ResponseModel responseModel = new ResponseModel(discussionID,authorId,author,text);
         responseRepository.save(responseModel);
         return responseModel;
     }

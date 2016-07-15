@@ -34,13 +34,11 @@ public class EventModel {
     protected EventModel(){
     }
 
-    public EventModel(String title,String classe,String description, String time, String matiere){
+    public EventModel(String title,String classe,String description, String time,String date, String matiere){
         this.title = title;
         this.classe = classe;
         this.description = description;
-        Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyyy hh:mm");
-        this.date = format.format(date);
+        this.date = date;
         this.time = time;
         this.matiere = matiere;
     }
