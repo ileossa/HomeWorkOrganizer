@@ -33,8 +33,8 @@ public class EventController {
                                   @RequestParam(value = "time") String time,
                                   @RequestParam(value = "date") String date,
                                   @RequestParam(value = "matiere") String matiere) {
-        
-        EventModel eventModel = new EventModel(groupeId, title, desc, time,date, matiere);
+
+        EventModel eventModel = new EventModel(title, groupeId, desc, time,date, matiere);
         eventRepository.save(eventModel);
         return eventModel;
     }
@@ -62,7 +62,7 @@ public class EventController {
                 eventModel.setTime(time);
             }
             if (!date.equals("null")) {
-                eventModel.setTime(date);
+                eventModel.setDate(date);
             }
             if (!matiere.equals("null")) {
                 eventModel.setMatiere(matiere);
