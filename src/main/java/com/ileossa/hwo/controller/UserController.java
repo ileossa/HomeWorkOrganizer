@@ -41,7 +41,7 @@ public class UserController {
     @RequestMapping(method = GET)
     public List<UserModel> listMemberGroup(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
-        memberGroup = userRepository.findByClasse(classe);
+        memberGroup = userRepository.findByClasse(classe.toUpperCase());
         return memberGroup;
     }
 
@@ -80,12 +80,14 @@ public class UserController {
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
                              @RequestParam(value="groupId")  String group) throws UserCreateException {
+        group = group.toUpperCase();
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
 
         String role = UserEnum.ETUDIANT.toString();
+
 
         if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
         {
@@ -149,7 +151,9 @@ public class UserController {
         }else {
             throw new UserNotFoundException();
         }
+
     }
+
 }
 
 
