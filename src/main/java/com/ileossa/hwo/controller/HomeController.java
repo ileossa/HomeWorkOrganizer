@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class HomeController {
 
+    /**
+     * Permet d'afficher un message de bienvenus, par défaut avec le mode dev l'url est
+     *          localhost:8080
+     * @return
+     */
     @RequestMapping(method = RequestMethod.GET)
     public String homePage(){
         return "Welcom API Home Work Organizer";

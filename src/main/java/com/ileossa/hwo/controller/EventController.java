@@ -23,9 +23,23 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping("/event")
 public class EventController {
 
+    /**
+     * Permet de faire appel à l'interface et de manipuler les modèles avec la base de donnée
+     */
     @Autowired
     private EventRepository eventRepository;
 
+
+    /**
+     * Permet de créer un nouvel évènement dans la base de donnée
+     * @param groupeId
+     * @param title
+     * @param desc
+     * @param time
+     * @param date
+     * @param matiere
+     * @return
+     */
     @RequestMapping(method = POST)
     public EventModel createEvent(@RequestParam(value = "groupId") String groupeId,
                                   @RequestParam(value = "title") String title,
@@ -40,6 +54,18 @@ public class EventController {
         return eventModel;
     }
 
+    /**
+     * Permet de mettre à jour un évènement déjà existant dans la base dedonnée, si il n'y a aucun changement hibernate ne feras pas de mise à jour de ces tables
+     * @param groupeId
+     * @param id
+     * @param title
+     * @param desc
+     * @param time
+     * @param date
+     * @param matiere
+     * @return
+     * @throws EventNotFoundException
+     */
     @RequestMapping(method = PUT)
     public EventModel updateEvent(@RequestParam(value = "groupId", defaultValue = "null") String groupeId,
                                   @RequestParam(value = "id") long id,
@@ -78,6 +104,10 @@ public class EventController {
         }
     }
 
+    /**
+     * Permet de supprimer un evènement enregistré dans la base donnée, ce faisan on la supprime aussi pour les utilisateurs appartenant à l'évènement.
+     * @param id
+     */
     @RequestMapping(method = DELETE)
     public void deleteEvent(@RequestParam(value = "id") long id) {
         if (eventRepository.findOne(id) != null) {
@@ -85,6 +115,11 @@ public class EventController {
         }
     }
 
+    /**
+     * Permet de retourner la liste des évènement avec le filtre "groupId" dans la demande HTTP. (cf : voir le répository repository/EventRepository
+     * @param groupe
+     * @return
+     */
     @RequestMapping(method = GET)
     public List<EventModel> listEvent(@RequestParam(value = "groupId") String groupe) {
         groupe = groupe.toUpperCase();

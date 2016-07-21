@@ -23,9 +23,18 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 public class ForumController {
 
 
+    /**
+     * Instance pour réaliser des requètages sur la base de donnée
+     */
     @Autowired
     private ForumRepository forumRepository;
 
+    /**
+     * Permet de créer un forum, par défaut à la création d'un nouvelle classe un forum de "base" est créé.
+     * @param groupeId
+     * @param name
+     * @return
+     */
     @RequestMapping(method = POST)
     public ForumModel createForum(@RequestParam(value = "groupId") String groupeId,
                                   @RequestParam(value = "name") String name){
@@ -33,6 +42,12 @@ public class ForumController {
         forumRepository.save(forumModel);
         return forumModel;
     }
+
+    /**
+     * Permet d'avoir la liste des différentes discussion du forum cible. (cf : repository/DiscussionRepository)
+     * @param groupeId
+     * @return
+     */
     @RequestMapping(method = GET)
     public List<ForumModel> getListDiscussion(@RequestParam(value = "groupId") String groupeId){
         groupeId = groupeId.toUpperCase();

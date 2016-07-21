@@ -15,15 +15,25 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 /**
  * Created by kevin on 11/07/2016.
+ * Permet de pouvoir générer les appels URL pour le type Evenement
  */
-
 @RestController
 @RequestMapping("/actus")
 public class ActuController {
 
+    /**
+     * Permet d'initialiser et utiliser les méthodes pour manipuler et requêter la base de données
+     */
     @Autowired
     private ActuRepository actuRepository;
 
+    /**
+     * Permet de créer et sauvegarder une nouvelle actualité dans la base de donnée
+     * @param groupeId
+     * @param title
+     * @param text
+     * @return
+     */
     @RequestMapping(method = POST)
     public ActuModel createActu(@RequestParam(value = "groupId") String groupeId,
                                 @RequestParam(value = "title") String title,
@@ -34,6 +44,14 @@ public class ActuController {
         return actuModel;
     }
 
+    /**
+     * Permet de réaliser une mise à jour sur l'actualité cible
+     * @param id
+     * @param title
+     * @param text
+     * @return
+     * @throws ActuNotFoundException
+     */
     @RequestMapping(method = PUT)
     public ActuModel updateActu(@RequestParam(value = "id") long id,
                                 @RequestParam(value = "title", defaultValue = "null") String title,
@@ -53,6 +71,11 @@ public class ActuController {
         }
     }
 
+    /**
+     * Permet de supprimer de la base de donnée l'actualité
+     * @param id
+     * @throws ActuNotFoundException
+     */
     @RequestMapping(method = DELETE)
     public void deleteActu(@RequestParam(value = "id") long id) throws ActuNotFoundException {
 
@@ -65,6 +88,11 @@ public class ActuController {
         }
     }
 
+    /**
+     * Retourne une liste d'actualité dans le JSON, avec comme filtre le group id de la classe
+     * @param groupeId
+     * @return
+     */
     @RequestMapping(method = GET)
     public List<ActuModel> listActu(@RequestParam(value = "groupId") String groupeId) {
         groupeId = groupeId.toUpperCase();

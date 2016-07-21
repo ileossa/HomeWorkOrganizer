@@ -22,9 +22,20 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RequestMapping("/reponse")
 public class ReponseController {
 
+    /**
+     * Instance pour réaliser les requêtes sur la base de donnée
+     */
     @Autowired
     private ResponseRepository responseRepository;
 
+    /**
+     * Permet de créer un reponse dans le forum à une discussion séléctionné
+     * @param discussionID
+     * @param authorId
+     * @param author
+     * @param text
+     * @return
+     */
     @RequestMapping(method = POST)
     public ResponseModel createReponse(@RequestParam(value = "discussionId") long discussionID,
                                        @RequestParam(value = "authorId")long authorId,
@@ -35,6 +46,12 @@ public class ReponseController {
         return responseModel;
     }
 
+
+    /**
+     * Permet de récupérer la liste des discussion suivant la "discussionId"
+     * @param discussionId
+     * @return
+     */
     @RequestMapping(method = GET)
     public List<ResponseModel> getListDiscussion(@RequestParam(value = "discussionId") long discussionId){
         return responseRepository.findByDiscusionId(discussionId);

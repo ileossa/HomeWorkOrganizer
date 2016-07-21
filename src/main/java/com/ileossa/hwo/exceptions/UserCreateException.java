@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @author v.lafosse
  *
  */
+
+/**
+ * L'exception est levé si aucune discussion n'est trouvé dans la base de donnée via le repository correspondant
+ */
 @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "fields not found")
 public class UserCreateException extends Exception {
 

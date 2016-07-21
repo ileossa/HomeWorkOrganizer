@@ -50,6 +50,8 @@ spring:
   h2:
     console:
       enabled: true
+# url pour accéder à la console H2, est la suivante par défaut : http://localhost:8080/h2-console/
+# en cas de changement voir dans les logs au démarage une route ("/h2-console") affiché
 ---
 #---------------------------------------------------
 #            TEST  MODE
@@ -68,7 +70,8 @@ server:
 #            PRODUCTION  MODE
 #---------------------------------------------------
 
-
+#configuration de la base de donnée postgresSql lors du basculement du service sur les server Heroku, pour tout autre hébergeur ce reporter à la documentation ou à l'url suivante
+#           http://docs.spring.io/spring-boot/docs/current/reference/html/cloud-deployment.html
 spring:
   profiles: prod
   datasource:

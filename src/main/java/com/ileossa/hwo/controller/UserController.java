@@ -37,7 +37,11 @@ public class UserController {
     private ForumRepository forumRepository;
 
 
-
+    /**
+     * Permet de supprimer un liste d'utilisateur de la base de donnée suivant le filtre "groupId"
+     * @param classe
+     * @return
+     */
     @RequestMapping(method = GET)
     public List<UserModel> listMemberGroup(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
@@ -45,6 +49,11 @@ public class UserController {
         return memberGroup;
     }
 
+    /**
+     * Désactive la liste des membre appartenant à une classe en passant la valeur active définie dans le modèle USER à false.
+     * @param classe
+     * @return
+     */
     @RequestMapping(method = POST, value = "/ban/all")
     public String removeAllMember(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
@@ -57,6 +66,12 @@ public class UserController {
     }
 
 
+    /**
+     *récupère l'utilisateur de la base dedonnée suivant le critère id du modèle User
+     * @param id
+     * @return
+     * @throws UserNotFoundException
+     */
     @RequestMapping(method = GET , value = "/{id}")
     public UserModel getUser(@PathVariable long id ) throws UserNotFoundException {
         if (userRepository.findOne(id)!=null){
@@ -68,6 +83,14 @@ public class UserController {
 
 // --------------------------------------------------
 
+
+    /**
+     * Permet de connecter l'utilisateur grâce à son email et son password
+     * @param email
+     * @param password
+     * @return
+     * @throws UserNotFoundException
+     */
     @RequestMapping(method = POST , value = "/authenticate")
     public UserModel connectUser(@RequestParam(value = "email") String email,
                                  @RequestParam(value = "password") String password) throws UserNotFoundException {
@@ -85,7 +108,15 @@ public class UserController {
     }
 
 
-
+    /**
+     * Créer un nouveau utilisateur est l'affecte à la classe qu'il à passé en paramètre -> "groupId"
+     * @param pseudo
+     * @param password
+     * @param email
+     * @param group
+     * @return
+     * @throws UserCreateException
+     */
     @RequestMapping(method = POST)
     public UserModel newUser(@RequestParam(value="pseudo") String pseudo,
                              @RequestParam(value="password")  String password,
@@ -115,7 +146,14 @@ public class UserController {
     }
 
 
-
+    /**
+     * permet d'attributer de nouveau droits (augmenté ou diminué), pour le type de droit possible voir model/userEnum.
+     * @param idUser
+     * @param currentRole
+     * @param newRole
+     * @return
+     * @throws UserErrorPatch
+     */
     @RequestMapping( method = POST, value="/promote")
     public UserModel promoteUser(@RequestParam(value = "id") long idUser,
                                  @RequestParam(value = "current_role") String currentRole,
@@ -131,7 +169,12 @@ public class UserController {
     }
 
 
-
+    /**
+     * Permet de ban un utilisateur et passant son activité à false ( cf UserModel)
+     * @param pseudo
+     * @return
+     * @throws UserNotFoundException
+     */
     @RequestMapping(method = POST , value = "/ban" )
     public UserModel banUser(@RequestParam(value = "pseudo")String pseudo ) throws UserNotFoundException {
         if(userRepository.findOneByPseudo(pseudo)!=null){

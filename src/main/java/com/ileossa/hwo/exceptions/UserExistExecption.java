@@ -5,6 +5,10 @@ package com.ileossa.hwo.exceptions;
  * @update ileossa
  *
  */
+
+/**
+ * L'exception est levé si aucune discussion n'est trouvé dans la base de donnée via le repository correspondant
+ */
 public class UserExistExecption {
 
 	public UserExistExecption() {

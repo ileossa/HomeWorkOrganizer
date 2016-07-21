@@ -16,6 +16,9 @@ import java.util.TimeZone;
  * Created by kevin on 12/07/2016.
  */
 
+/**
+ * Model de donnée permettant de représenter les donnée qui seront par la suite stocke dans la base de donnée
+ */
 @Setter
 @Getter
 @ToString

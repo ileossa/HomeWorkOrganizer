@@ -8,7 +8,9 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.util.List;
 
-
+/**
+ * Model de donnée permettant de représenter les donnée qui seront par la suite stocke dans la base de donnée
+ */
 @Setter
 @Getter
 @ToString

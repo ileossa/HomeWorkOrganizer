@@ -15,7 +15,9 @@ import javax.persistence.Id;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
+/**
+ * Model de donnée permettant de représenter les donnée qui seront par la suite stocke dans la base de donnée
+ */
 @Setter
 @Getter
 @ToString

@@ -47,7 +47,13 @@ public class DocumentController {
     }
 
 
-
+    /**
+     * Permet de récupérer un fichier qui à été préalablement charger sur le serveur
+     * l'url d'accès est de type
+     *      home-work-organiser.com/documents/fileName.extention
+     * @param filename
+     * @return
+     */
     @RequestMapping(method = RequestMethod.GET, value = "/{filename:.+}")
     @ResponseBody
     public ResponseEntity<?> getFile(@PathVariable String filename) {
@@ -60,7 +66,14 @@ public class DocumentController {
     }
 
 
-
+    /**
+     * Permet de charger sur le serveur un fichier, une limite de 10Mo est appliqué sur le fichier, si il dépasse le téléchargement est refusé
+     * @param file
+     * @param classe
+     * @return
+     * @throws EmptyFile
+     * @throws FailToUploadException
+     */
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.ACCEPTED)
     public DocumentModel handleFileUpload(@RequestParam("file") MultipartFile file,
@@ -82,7 +95,11 @@ public class DocumentController {
         return documentModel;
     }
 
-
+    /**
+     * Permet de récupérer la liste des fichier chargé par un classe
+     * @param group
+     * @return
+     */
     @RequestMapping(method = RequestMethod.GET)
     public List<DocumentModel> getListFileWith(@RequestParam("groupId")String group){
         group = group.toUpperCase();
