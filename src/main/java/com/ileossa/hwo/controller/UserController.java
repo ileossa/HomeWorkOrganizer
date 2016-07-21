@@ -46,13 +46,14 @@ public class UserController {
     }
 
     @RequestMapping(method = POST, value = "/ban/all")
-    public void removeAllMember(@RequestParam(value = "groupId") String classe){
+    public String removeAllMember(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
         memberGroup = userRepository.findByClasse(classe.toUpperCase());
         for (UserModel user: memberGroup) {
             user.setActive(false);
             userRepository.save(user);
         }
+        return classe;
     }
 
 
