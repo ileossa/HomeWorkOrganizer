@@ -28,6 +28,7 @@ public class ActuController {
     public ActuModel createActu(@RequestParam(value = "groupId") String groupeId,
                                 @RequestParam(value = "title") String title,
                                 @RequestParam(value = "text") String text) {
+        groupeId = groupeId.toUpperCase();
         ActuModel actuModel = new ActuModel(groupeId, title, text);
         actuRepository.save(actuModel);
         return actuModel;
@@ -66,6 +67,7 @@ public class ActuController {
 
     @RequestMapping(method = GET)
     public List<ActuModel> listActu(@RequestParam(value = "groupId") String groupeId) {
+        groupeId = groupeId.toUpperCase();
         List<ActuModel> listActu = new ArrayList<>();
         listActu = actuRepository.findByClasse(groupeId);
         return listActu;

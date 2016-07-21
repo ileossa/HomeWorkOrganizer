@@ -41,8 +41,18 @@ public class UserController {
     @RequestMapping(method = GET)
     public List<UserModel> listMemberGroup(@RequestParam(value = "groupId") String classe){
         List<UserModel> memberGroup = new ArrayList<>();
-        memberGroup = userRepository.findByClasse(classe);
+        memberGroup = userRepository.findByClasse(classe.toUpperCase());
         return memberGroup;
+    }
+
+    @RequestMapping(method = POST, value = "/ban/all")
+    public void removeAllMember(@RequestParam(value = "groupId") String classe){
+        List<UserModel> memberGroup = new ArrayList<>();
+        memberGroup = userRepository.findByClasse(classe.toUpperCase());
+        for (UserModel user: memberGroup) {
+            user.setActive(false);
+            userRepository.save(user);
+        }
     }
 
 
@@ -80,12 +90,14 @@ public class UserController {
                              @RequestParam(value="password")  String password,
                              @RequestParam(value="email")  String email,
                              @RequestParam(value="groupId")  String group) throws UserCreateException {
+        group = group.toUpperCase();
         LOG.debug("Parameters get pseudo: " + pseudo
                 + " , email: " + email
                 + " , password: " + password
                 + " , group: " + group);
 
         String role = UserEnum.ETUDIANT.toString();
+
 
         if(userRepository.findOneByEmail(email) != null || userRepository.findOneByPseudo(pseudo) != null)
         {
@@ -122,10 +134,10 @@ public class UserController {
     @RequestMapping(method = POST , value = "/ban" )
     public UserModel banUser(@RequestParam(value = "pseudo")String pseudo ) throws UserNotFoundException {
         if(userRepository.findOneByPseudo(pseudo)!=null){
-            UserModel caca = userRepository.findOneByPseudo(pseudo);
-            caca.setActive(false);
-            userRepository.save(caca);
-            return caca;
+            UserModel user = userRepository.findOneByPseudo(pseudo);
+            user.setActive(false);
+            userRepository.save(user);
+            return user;
         }else{
             throw new UserNotFoundException();
         }
@@ -149,7 +161,9 @@ public class UserController {
         }else {
             throw new UserNotFoundException();
         }
+
     }
+
 }
 
 

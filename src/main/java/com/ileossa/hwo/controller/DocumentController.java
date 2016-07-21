@@ -65,7 +65,7 @@ public class DocumentController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public DocumentModel handleFileUpload(@RequestParam("file") MultipartFile file,
                                    @RequestParam(value = "groupId") String classe) throws EmptyFile, FailToUploadException {
-
+        classe = classe.toUpperCase();
         DocumentModel documentModel;
         if (!file.isEmpty()) {
             try {
@@ -85,6 +85,7 @@ public class DocumentController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<DocumentModel> getListFileWith(@RequestParam("groupId")String group){
+        group = group.toUpperCase();
         return documentRepository.findByClasse(group);
     }
 

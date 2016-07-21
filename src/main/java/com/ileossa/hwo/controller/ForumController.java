@@ -35,6 +35,7 @@ public class ForumController {
     }
     @RequestMapping(method = GET)
     public List<ForumModel> getListDiscussion(@RequestParam(value = "groupId") String groupeId){
+        groupeId = groupeId.toUpperCase();
         return forumRepository.findByClasse(groupeId);
     }
 
