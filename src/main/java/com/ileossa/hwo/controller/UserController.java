@@ -45,6 +45,16 @@ public class UserController {
         return memberGroup;
     }
 
+    @RequestMapping(method = POST, value = "/ban/all")
+    public void removeAllMember(@RequestParam(value = "groupId") String classe){
+        List<UserModel> memberGroup = new ArrayList<>();
+        memberGroup = userRepository.findByClasse(classe.toUpperCase());
+        for (UserModel user: memberGroup) {
+            user.setActive(false);
+            userRepository.save(user);
+        }
+    }
+
 
     @RequestMapping(method = GET , value = "/{id}")
     public UserModel getUser(@PathVariable long id ) throws UserNotFoundException {
@@ -124,10 +134,10 @@ public class UserController {
     @RequestMapping(method = POST , value = "/ban" )
     public UserModel banUser(@RequestParam(value = "pseudo")String pseudo ) throws UserNotFoundException {
         if(userRepository.findOneByPseudo(pseudo)!=null){
-            UserModel caca = userRepository.findOneByPseudo(pseudo);
-            caca.setActive(false);
-            userRepository.save(caca);
-            return caca;
+            UserModel user = userRepository.findOneByPseudo(pseudo);
+            user.setActive(false);
+            userRepository.save(user);
+            return user;
         }else{
             throw new UserNotFoundException();
         }
