@@ -151,8 +151,8 @@ public class UserController {
                                         @RequestParam(value = "new_password")String newPassword) throws UserNotFoundException, UserErrorPatch {
         if(userRepository.findOne(idUser)!=null){
             UserModel userModel = userRepository.findOne(idUser);
-            if(userModel.getPassword().equals(newPassword)) {
-                userModel.setPassword(password);
+            if(userModel.getPassword().equals(password)) {
+                userModel.setPassword(newPassword);
                 userRepository.save(userModel);
                 return userModel;
             }else{
